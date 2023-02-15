@@ -1,0 +1,41 @@
+/* FAQ */
+.wraper {
+  width: 70%;
+}
+.acardion {
+  background-color: white;
+  color: black;
+  cursor: pointer;
+  font-size: 20px;
+  width: 100%;
+  padding: 20px 30px;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+}
+.active,
+.acardion:hover {
+  background-color: rgb(211, 236, 240);
+}
+.panel {
+  padding-left: 18px;
+  padding-right: 18px;
+  background-color: rgb(211, 236, 240);
+  overflow: hidden;
+  display: none;
+}
+.panel p {
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 16px;
+  line-height: 1.4;
+}
+.faq {
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  margin: 10px 0;
+}
+.faq.active {
+  border: none;
+}
