@@ -26,37 +26,31 @@
           >
           <ul class="header-list list">
             <li class="header-item">
-              <a href="" class="header-link link">Про мене</a>
+              <a href="#hero" class="header-link link">Про мене</a>
             </li>
             <li class="header-item">
-              <a href="" class="header-link link">Мій підхід</a>
+              <a href="#work" class="header-link link">Мій підхід</a>
             </li>
             <li class="header-item">
-              <a href="" class="header-link link">Послуги</a>
+              <a href="#services" class="header-link link">Послуги</a>
             </li>
             <li class="header-item">
-              <a href="" class="header-link link">Як це працює</a>
+              <a href="#faq" class="header-link link">Питання</a>
             </li>
-            <li class="header-item">
+            <!-- <li class="header-item">
               <a href="" class="header-link link">Відгуки</a>
-            </li>
+            </li> -->
             <li class="header-item">
-              <a href="" class="header-link link">Контакти</a>
+              <a href="#contact" class="header-link link">Контакти</a>
             </li>
           </ul>
         </nav>
-        <a
-          href=""
-          class="header-btn btn link"
-          target="_blank"
-          rel="noreferrer noopener"
-          >Онлайн-реєстрація</a
-        >
+        <a href="#registration" class="header-btn btn link">Реєстрація</a>
       </div>
     </header>
     <main>
       <!-- /* --------------HERO-------------- */ -->
-      <section class="hero">
+      <section class="hero" id="hero">
         <div class="container">
           <div class="hero-img">
             <img
@@ -67,7 +61,6 @@
             />
           </div>
           <div class="hero-content">
-            <!-- <p class="-subtitle subtitle">Про мене</p> -->
             <h1 class="hero-title">Мати емоційні проблеми - це природно</h1>
             <p class="hero-description description">
               Я походжу з сім’ї, де 3 покоління терапевтів і психологів, і
@@ -87,7 +80,8 @@
           </div>
         </div>
       </section>
-      <section class="work">
+      <!--------------work---------------->
+      <section class="work" id="work">
         <div class="container">
           <h2 class="work-title title">Мій підхід</h2>
           <ul class="work-list list">
@@ -204,7 +198,7 @@
         </div>
       </section>
       <!--------------Services------------->
-      <section class="services">
+      <section class="services" id="services">
         <div class="container">
           <h2 class="services-title title">Послуги</h2>
           <ul class="services-list list">
@@ -239,7 +233,7 @@
         </div>
       </section>
       <!--------------Registration------------->
-      <section class="registration">
+      <section class="registration" id="registration">
         <div class="container">
           <h2 class="registration-title title">Як потрапити на сесію</h2>
           <ul class="registration-list list">
@@ -276,15 +270,23 @@
               </div>
             </li>
           </ul>
-          <button type="button" class="hero-btn btn">Зв'яжіться зі мною</button>
+          <div class="registration-btn">
+            <a
+              href="/"
+              class="btn link"
+              target="_blank"
+              rel="noreferrer noopener"
+              >Заповнити форму</a
+            >
+          </div>
         </div>
       </section>
       <!--------------FAQ------------->
-      <section class="faq-section">
+      <section class="faq-section" id="faq">
         <div class="wraper container">
           <h2 class="faq-title title">FAQ</h2>
           <div class="faq active">
-            <button class="acardion">
+            <button class="acardion subtitle">
               Що таке типове призначення терапії?
               <img src="./images/icons8.png" alt="" />
             </button>
@@ -298,7 +300,7 @@
             </div>
           </div>
           <div class="faq active">
-            <button class="acardion">
+            <button class="acardion subtitle">
               Як часто я буду відвідувати вас?<img
                 src="./images/icons8.png"
                 alt=""
@@ -315,7 +317,7 @@
             </div>
           </div>
           <div class="faq active">
-            <button class="acardion">
+            <button class="acardion subtitle">
               Яких переваг я можу очікувати від роботи з терапевтом?<img
                 src="./images/icons8.png"
                 alt=""
@@ -337,16 +339,18 @@
           </div>
         </div>
       </section>
-      <section>
-        <p>
-          <q
-            >«Ми не бачимо речі такими, якими вони є, ми бачимо речі такими, які
-            ми є».</q
-          >
-          - Ray Goforth
-        </p>
+      <section class="excerption">
+        <div class="container">
+          <p class="excerption-description description">
+            <q
+              >Ми не бачимо речі такими, якими вони є, ми бачимо речі такими,
+              які ми є</q
+            >
+          </p>
+          <p class="excerption-description description">- Ray Goforth -</p>
+        </div>
       </section>
-      <section>
+      <section class="contact" id="contact">
         <div>
           <h2>Зв'яжіться зі мною</h2>
           <p>

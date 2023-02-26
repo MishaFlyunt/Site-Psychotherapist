@@ -1,10 +1,10 @@
 :root {
   /* header */
   --logo-color: rgb(98, 162, 146);
-  --logo-color-2: rgb(173, 225, 212);
+  --logo-color-2: rgba(102, 200, 176, 0.767);
   --header-link-color: rgb(83, 87, 86);
   --header-link-hover-color: rgb(185, 197, 195);
-  --header-bg: beige;
+  --header-bg:rgba(237, 232, 232, 0.3);;
   /* btn */
   --btn-bg-color: rgb(98, 162, 146);
   --btn-text-color: rgb(255, 255, 255);
@@ -13,6 +13,7 @@
   --btn-text-hover-color: rgb(243, 119, 94);
   --btn-border-hover-color: ;
   /* main */
+  --page-bg-color: whitesmoke;
   --title-color: ;
   --text-color: ;
   /* font */
@@ -42,7 +43,7 @@ img {
 }
 
 body {
-  background-color: whitesmoke;
+  background-color: var(--page-bg-color);
   font-family: var(--primary-font);
   font-weight: 400;
   font-size: 16px;
@@ -96,12 +97,11 @@ body {
   font-size: 12px;
   line-height: 1.33;
   letter-spacing: 0.09em;
-  text-transform: uppercase;
   cursor: pointer;
 
   color: var(--btn-text-color);
   background-color: var(--btn-bg-color);
-  padding: 12px 15px;
+  padding: 12px 20px;
   border-radius: 14px;
   border: 2px solid var(--btn-border-color);
 }
@@ -121,6 +121,11 @@ body {
 
 .header {
   background-color: var(--header-bg);
+
+  position: sticky;
+  top: 0;
+
+  border-bottom: 2px solid rgba(231, 232, 233, 0.443);
 }
 
 .header .container {
@@ -324,7 +329,6 @@ body {
 
 .registration {
   padding: 100px 0;
-  /* text-align: center; */
 }
 
 .registration-title {
@@ -374,7 +378,11 @@ body {
 .registration-description {
 }
 
-.hero-btn {
+.registration-btn {
+  display: flex;
+  justify-content: center;
+
+  margin-top: 40px;
 }
 
 /* ------------FAQ------------ */
@@ -396,6 +404,7 @@ body {
 .acardion {
   background-color: white;
   color: black;
+
   cursor: pointer;
   font-size: 20px;
   width: 100%;
@@ -403,6 +412,7 @@ body {
   border: none;
   outline: none;
   transition: 0.4s;
+
   display: flex;
   justify-content: space-between;
   font-weight: bold;
@@ -410,14 +420,14 @@ body {
 
 .active,
 .acardion:hover {
-  background-color: rgb(211, 236, 240);
+  background-color: var(--btn-bg-color);
 }
 
 .panel {
-  padding-left: 18px;
-  padding-right: 18px;
-  background-color: rgb(211, 236, 240);
+  padding: 20px;
+  background-color: white;
   overflow: hidden;
+
   display: none;
 }
 
@@ -434,4 +444,13 @@ body {
 
 .faq.active {
   border: none;
+}
+
+/* -------------excerption----------- */
+
+.excerption {
+}
+
+.excerption-description {
+  text-align: center;
 }
