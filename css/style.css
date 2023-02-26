@@ -2,18 +2,21 @@
   /* header */
   --logo-color: rgb(98, 162, 146);
   --logo-color-2: rgba(102, 200, 176, 0.767);
-  --header-link-color: rgb(83, 87, 86);
-  --header-link-hover-color: rgb(185, 197, 195);
-  --header-bg:rgba(237, 232, 232, 0.3);;
+
+  --header-link-color: rgb(61, 63, 63);
+  --header-link-hover-color: rgb(98, 115, 112);
+  --header-bg: rgba(237, 232, 232, 0.3);
   /* btn */
   --btn-bg-color: rgb(98, 162, 146);
   --btn-text-color: rgb(255, 255, 255);
   --btn-border-color: rgb(173, 225, 212);
-  --btn-bg-hover-color: ;
-  --btn-text-hover-color: rgb(243, 119, 94);
+
+  --btn-bg-hover-color: rgb(222, 244, 239);
+  --btn-text-hover-color: rgb(56, 66, 69);
   --btn-border-hover-color: ;
   /* main */
-  --page-bg-color: whitesmoke;
+  --primary-bg-color: whitesmoke;
+  --secondary-bg-color: rgb(224, 247, 247);
   --title-color: ;
   --text-color: ;
   /* font */
@@ -43,7 +46,7 @@ img {
 }
 
 body {
-  background-color: var(--page-bg-color);
+  background-color: var(--primary-bg-color);
   font-family: var(--primary-font);
   font-weight: 400;
   font-size: 16px;
@@ -108,6 +111,7 @@ body {
 .btn:hover,
 .btn:focus {
   color: var(--btn-text-hover-color);
+  background-color: var(--btn-bg-hover-color);
 }
 
 .container {
@@ -168,6 +172,12 @@ body {
   color: var(--header-link-color);
 
   padding: 20px 0 10px;
+}
+
+.course {
+  color: var(--logo-color);
+
+  font-weight: 900;
 }
 
 .header-link:hover,
@@ -449,8 +459,28 @@ body {
 /* -------------excerption----------- */
 
 .excerption {
+  padding: 50px 0;
+
+  background-color: var(--secondary-bg-color);
+}
+
+.excerption .container{
+display: flex;
+flex-direction: column;
+align-items: center;
 }
 
 .excerption-description {
+  max-width: 650px;
+
+  font-size: 30px;
+  text-align: center;
+  font-style: oblique;
+}
+
+.excerption-description {
+    margin-bottom: 30px;
+}
+.author {
   text-align: center;
 }
