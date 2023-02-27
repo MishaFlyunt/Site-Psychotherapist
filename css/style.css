@@ -44,6 +44,9 @@ img {
   max-width: 100%;
   height: auto;
 }
+address{
+  font-style: normal;
+}
 
 body {
   background-color: var(--primary-bg-color);
@@ -464,10 +467,10 @@ body {
   background-color: var(--secondary-bg-color);
 }
 
-.excerption .container{
-display: flex;
-flex-direction: column;
-align-items: center;
+.excerption .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .excerption-description {
@@ -479,8 +482,82 @@ align-items: center;
 }
 
 .excerption-description {
-    margin-bottom: 30px;
+  margin-bottom: 30px;
 }
 .author {
   text-align: center;
+}
+
+/* ----------contact---------- */
+
+.contact {
+  /* background-color: rgb(225, 224, 224); */
+  padding: 50px 0 10px;
+  border-bottom: 1px solid rgb(192, 191, 190);
+}
+
+.address-container {
+  display: flex;
+  justify-content: space-between;
+
+  padding-bottom: 15px;
+}
+
+.contact-list {
+  width: 270px;
+}
+
+.contact-address {
+  margin-bottom: 15px;
+}
+
+.contact-link {
+}
+
+.contact-item {
+}
+
+.contact-mail {
+}
+
+.contact-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 270px;
+}
+
+.contact-logo .logo {
+  padding: 0;
+}
+
+.contact-social {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  width: 270px;
+}
+
+.social-item-insta {
+  margin-bottom: 15px;
+}
+
+.social-insta {
+}
+
+.social-teleg {
+}
+
+/* ------------footer----------- */
+
+.logo-pay {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding: 20px 0 15px;
+}
+.copyright {
+  font-size: 14px;
+  line-height: 1.2;
 }
