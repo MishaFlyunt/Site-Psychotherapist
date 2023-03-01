@@ -17,8 +17,8 @@
   /* main */
   --primary-bg-color: whitesmoke;
   --secondary-bg-color: rgb(224, 247, 247);
-  --title-color: ;
-  --text-color: ;
+  --title-color: #303030;
+  --text-color: #555555;
   /* font */
   --primary-font: "Open Sans", sans-serif;
   --secondaty-font: "Raleway", sans-serif;
@@ -44,7 +44,7 @@ img {
   max-width: 100%;
   height: auto;
 }
-address{
+address {
   font-style: normal;
 }
 
@@ -55,7 +55,7 @@ body {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  /* color: ; */
+  color: var(--text-color);
 }
 
 .title {
@@ -63,6 +63,7 @@ body {
   font-size: 42px;
   line-height: 1.17;
   letter-spacing: 0.05em;
+  color: var(--title-color);
 }
 .subtitle {
   font-weight: 600;
@@ -128,6 +129,7 @@ body {
 
 .header {
   background-color: var(--header-bg);
+  /* background-image: url(/images/font.jpeg); */
 
   position: sticky;
   top: 0;
@@ -198,6 +200,21 @@ body {
 
 .hero {
   padding: 50px 0;
+  /* background-image: url(/images/font.jpeg); */
+
+  max-width: 1450px;
+  height: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  background: rgb(72, 128, 129);
+  background: linear-gradient(
+    84deg,
+    rgba(72, 128, 129, 1) 20%,
+    rgba(163, 176, 138, 1) 87%
+  );
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .hero .container {
@@ -265,6 +282,12 @@ body {
   max-width: 374px;
   padding: 20px 10px;
 }
+.work-item:hover {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  border: 0.5px solid var(--btn-border-color);
+  cursor: pointer;
+}
 
 .work-item img {
   margin-bottom: 20px;
@@ -282,7 +305,7 @@ body {
 .certificates {
   padding: 100px 0;
 
-  background-color: beige;
+  /* background-color: beige; */
 }
 
 .certificates-title {
@@ -298,12 +321,15 @@ body {
 
 .certificates-item {
   width: calc((100%-72px) / 4);
+
+  border: 3px solid rgb(66, 67, 65);
 }
 
 /* --------------Services------------- */
 
 .services {
   padding: 100px 0;
+  background-image: url(./images/malibu.jpeg);
 }
 
 .container {
