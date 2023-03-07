@@ -133,7 +133,7 @@ body {
 
 	position: sticky;
 	top: 0;
-  left: 0;
+	left: 0;
 
 	border-bottom: 2px solid rgba(231, 232, 233, 0.443);
 }
@@ -537,14 +537,13 @@ body {
 .contact-list .link {
 	/* display: block; */
 
-  color: #FFFFFF;
+	color: #ffffff;
 }
 
 .contact-link {
 }
 
-.contact-icon{
-  
+.contact-icon {
 }
 
 .contact-item {
@@ -595,6 +594,11 @@ body {
 	align-items: center;
 
 	padding: 5px 0 5px;
+}
+
+.offer-link{
+  margin-bottom: 7px;
+  color: var(--btn-text-hover-color);
 }
 .copyright {
 	font-size: 14px;
