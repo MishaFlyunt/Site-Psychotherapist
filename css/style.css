@@ -15,7 +15,7 @@
 	--btn-text-hover-color: rgb(33, 86, 86);
 	--btn-border-hover-color: var(--logo-color-2);
 	/* main */
-	--primary-bg-color: whitesmoke;
+	--primary-bg-color: rgb(255, 255, 255);
 	--secondary-bg-color: rgb(224, 247, 247);
 	--title-color: #2d2626;
 	--text-color: #555555;
@@ -136,14 +136,6 @@ body {
 	margin: 0 auto;
 	padding: 0 15px;
 }
-
-/* .my-element {
-  display: inline-block;
-  margin: 0 0.5rem;
-
-  animation: bounce; 
-  animation-duration: 2s; 
-} */
 
 /* ---------HEADER----------- */
 
@@ -354,8 +346,6 @@ body {
 .certificates {
 	padding: 100px 0;
 
-	/* background-color: rgb(121, 121, 63); */
-
 	background: linear-gradient(54deg, var(--logo-color-2) 40%, var(--logo-color) 67%);
 	background-repeat: no-repeat;
 	background-position: center;
@@ -375,15 +365,15 @@ body {
 
 .certificates-item {
 	width: calc((100%-72px) / 4);
-
-	/* border: 3px solid rgb(66, 67, 65); */
 }
+
 .certificates-item img {
 	border: 2px solid var(--header-link-color);
-  border-radius: 8px;
-  box-shadow: 2px 2px 95px -11px var(--header-link-color);
+	border-radius: 8px;
+	box-shadow: 2px 2px 95px -5px rgba(230, 104, 60, 0.58);
 
-  height: 100%;
+	height: 100%;
+	opacity: 0.8;
 }
 
 /* --------------Services------------- */
@@ -780,27 +770,128 @@ body {
 /* ------------Club----------- */
 
 .club {
-  padding: 100px 0;
+	padding: 70px 0 100px;
 }
 
 .club-container {
 }
 
 .club-title {
+	text-align: center;
+
+	margin-bottom: 72px;
 }
 
 .club-list {
+	display: flex;
+	justify-content: center;
+	gap: 40px;
 }
 
 .club-item {
+	max-width: 320px;
+	padding: 20px;
+	border-radius: 7px;
+	border: 1px solid var(--logo-color);
+
+	box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+
+	/* background-color: var(--secondary-bg-color); */
+}
+
+.club-img {
+	display: flex;
+	justify-content: center;
+
+	max-height: 250px;
 }
 
 .club-text {
+	padding-top: 25px;
+
+	height: 220px;
 }
 
 .club-subtitle {
+	text-align: center;
+	margin-bottom: 15px;
 }
 
 .clube-description {
+	margin-bottom: 18px;
+
+	font-size: 14px;
+	line-height: 1.57;
 }
 
+.club-btn {
+	display: flex;
+	justify-content: center;
+}
+
+/* --------------Modal--------------- */
+
+.backdrop {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(46, 47, 66, 0.4);
+
+	transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.backdrop.is-hidden {
+	opacity: 0;
+	pointer-events: none;
+}
+
+.modal {
+	display: flex;
+	justify-content: flex-end;
+
+	padding: 24px;
+
+	min-width: 408px;
+	min-height: 576px;
+	border-radius: 4px;
+  border: 1px solid var(--logo-color);
+	background-color: var(--primary-bg-color);
+	box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
+
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.btn-icon {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	width: 24px;
+	height: 24px;
+	border-radius: 50%;
+
+	background-color: var(--logo-color);
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	color: rgb(0, 0, 0);
+
+	cursor: pointer;
+
+	transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.btn-icon:is(:hover, :focus) {
+	border: none;
+	background-color: var(--link-hover-text);
+	color: var(--btn-text-color);
+}
+
+.modal-icon {
+	fill: currentColor;
+
+	transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}

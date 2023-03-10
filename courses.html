@@ -37,9 +37,9 @@
 						<li class="header-item">
 							<a href="./index.html#faq" class="header-link link current">Питання</a>
 						</li>
-						<li class="header-item">
+						<!-- <li class="header-item">
 							<a href="./index.html#contact" class="header-link link current">Контакти</a>
-						</li>
+						</li> -->
 					</ul>
 				</nav>
 				<a href="./index.html#registration" class="header-btn btn link">Реєстрація</a>
@@ -52,7 +52,7 @@
 					<h1 class="club-title title">Клуб Думай Відчувай Дій</h1>
 					<ul class="club-list list">
 						<li class="club-item">
-							<img src="./images/malibu.jpeg" alt="Фото клубу" width="300" height="270" />
+							<div class="club-img"><img src="./images/malibu.jpeg" alt="Фото клубу" width="280" height="220" /> </div>
 							<div class="club-text">
 								<h2 class="club-subtitle subtitle">Приєднатись</h2>
 								<p class="clube-description description"
@@ -60,31 +60,36 @@
 									repellat neque cupiditate. Ut repudiandae beatae, ad repellat exercitationem facere quae, hic iusto
 									consectetur, vero maxime esse sit.</p
 								>
-								<button></button>
+							</div>
+							<div class="club-btn">
+								<button class="btn" data-modal-open>Вступити в клуб</button>
 							</div>
 						</li>
 						<li class="club-item">
-							<img src="./images/malibu.jpeg" alt="Фото клубу" width="300" height="270" />
+							<div class="club-img"><img src="./images/malibu.jpeg" alt="Фото клубу" width="320" height="220" /> </div>
 							<div class="club-text">
 								<h2 class="club-subtitle subtitle">Приєднатись</h2>
 								<p class="clube-description description"
-									>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit tempore, soluta accusamus
-									praesentium maxime et doloremque placeat adipisci beatae similique laboriosam obcaecati commodi ad
-									quidem. Aliquid aut fuga nulla neque?</p
-								>
-								<button></button>
+									>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus eveniet, quisquam architecto
+									repellat neque cupiditate.
+								</p>
+							</div>
+							<div class="club-btn">
+								<button class="btn" data-modal-open-1>Вступити в клуб</button>
 							</div>
 						</li>
 						<li class="club-item">
-							<img src="./images/malibu.jpeg" alt="Фото клубу" width="300" height="270" />
+							<div class="club-img"><img src="./images/malibu.jpeg" alt="Фото клубу" width="280" height="220" /> </div>
 							<div class="club-text">
 								<h2 class="club-subtitle subtitle">Приєднатись</h2>
 								<p class="clube-description description"
-									>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, numquam? Aut commodi iure, debitis
-									doloribus qui quas tempora minus sint numquam. Necessitatibus eligendi laudantium cum tempore placeat
-									perspiciatis. Ex, repellat.</p
+									>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus eveniet, quisquam architecto
+									repellat neque cupiditate. Ut repudiandae beatae, ad repellat exercitationem facere quae, hic iusto
+									consectetur, vero maxime esse sit.</p
 								>
-								<button></button>
+							</div>
+							<div class="club-btn">
+								<button class="btn" data-modal-open-2>Вступити в клуб</button>
 							</div>
 						</li>
 					</ul>
@@ -165,6 +170,41 @@
 				<p lang="en" class="copyright">&copy;Copyright 2023</p>
 			</div>
 		</footer>
+		<!-- --------------Modal--------------- -->
+		<div class="backdrop is-hidden" data-modal>
+			<div class="modal">
+				<button class="btn-icon" data-modal-close>
+					<svg class="modal-icon" width="8" height="8">
+						<use href="./images/symbol-defs.svg#icon-close"></use>
+					</svg>
+				</button>
+				<a
+					href="https://secure.wayforpay.com/button/b6df4d1bd807d"
+					target="_blank"
+					rel="noopener noreferrer nofollow"
+					class="offer-link link"
+					><span>Вступити в клуб</span></a
+				>
+			</div>
+		</div>
+		<div class="backdrop is-hidden" data-modal-1>
+			<div class="modal">
+				<button class="btn-icon" data-modal-close-1>
+					<svg class="modal-icon" width="8" height="8">
+						<use href="./images/symbol-defs.svg#icon-close"></use>
+					</svg>
+				</button>
+			</div>
+		</div>
+		<div class="backdrop is-hidden" data-modal-2>
+			<div class="modal">
+				<button class="btn-icon" data-modal-close-2>
+					<svg class="modal-icon" width="8" height="8">
+						<use href="./images/symbol-defs.svg#icon-close"></use>
+					</svg>
+				</button>
+			</div>
+		</div>
 
 		<script src="./js/main.js"></script>
 	</body>
