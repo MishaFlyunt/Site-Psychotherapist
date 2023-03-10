@@ -376,7 +376,14 @@ body {
 .certificates-item {
 	width: calc((100%-72px) / 4);
 
-	border: 3px solid rgb(66, 67, 65);
+	/* border: 3px solid rgb(66, 67, 65); */
+}
+.certificates-item img {
+	border: 2px solid var(--header-link-color);
+  border-radius: 8px;
+  box-shadow: 2px 2px 95px -11px var(--header-link-color);
+
+  height: 100%;
 }
 
 /* --------------Services------------- */
@@ -446,7 +453,7 @@ body {
 
 	background-color: rgba(255, 255, 255, 0.3);
 
-	transition-property: background, border-radius;
+	transition-property: background-color, border-radius;
 	transition-duration: 300ms;
 	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -571,7 +578,7 @@ body {
 	transition-duration: 400ms;
 	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
-  fill: var(--logo-color);
+	fill: var(--logo-color);
 }
 
 .active,
@@ -579,7 +586,7 @@ body {
 	background-color: var(--logo-color);
 	color: rgb(255, 255, 255);
 
-  fill: currentColor;
+	fill: currentColor;
 }
 
 .panel {
@@ -610,7 +617,7 @@ body {
 .excerption {
 	padding: 50px 0;
 
-	background-color: var(--secondary-bg-color);
+	background: linear-gradient(44deg, var(--logo-color-2) 35%, var(--logo-color) 65%);
 }
 
 .excerption .container {
@@ -767,3 +774,33 @@ body {
 	font-size: 14px;
 	line-height: 1.2;
 }
+
+/* ------------Page 2---------- */
+
+/* ------------Club----------- */
+
+.club {
+  padding: 100px 0;
+}
+
+.club-container {
+}
+
+.club-title {
+}
+
+.club-list {
+}
+
+.club-item {
+}
+
+.club-text {
+}
+
+.club-subtitle {
+}
+
+.clube-description {
+}
+
