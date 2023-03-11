@@ -399,9 +399,7 @@ body {
 	display: flex;
 	/* width: calc((100%-24px) / 2); */
 
-	transition-property: box-shadow;
-	transition-duration: 400ms;
-	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .services-item:hover {

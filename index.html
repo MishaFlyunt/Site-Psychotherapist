@@ -5,20 +5,24 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Helena Flyunt</title>
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+		<!-- ---Шрифти Google--- -->
 		<link
 			href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Raleway:wght@700&display=swap"
 			rel="stylesheet"
 		/>
+		<!-- ---Нормалайз--- -->
 		<link
 			rel="stylesheet"
 			href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
 		/>
+		<!-- ---Анімація на скрол сторінки--- -->
+		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+		<!-- ---СSS--- -->
 		<link rel="stylesheet" href="./css/style.css" />
 	</head>
 	<body>
 		<!-- /* --------------HEADER-------------- */ -->
-		<header class="header">
+		<header class="header" data-aos="zoom-in">
 			<div class="container">
 				<nav class="header-navigation">
 					<a href="./index.html" class="logo link"><span class="ps">Helena</span><span class="name">Flyunt</span></a>
@@ -50,7 +54,7 @@
 			<!-- /* --------------HERO-------------- */ -->
 			<section class="hero" id="hero">
 				<div class="container">
-					<div class="hero-img">
+					<div class="hero-img" data-aos="fade-right">
 						<img
 							src="https://altera.center/pub/specialists/f9f445c191e343b1.jpg"
 							alt="Helena"
@@ -59,8 +63,8 @@
 						/>
 					</div>
 					<div class="hero-content">
-						<h1 class="hero-title title animate__animated animate__backInDown">Мати емоційні проблеми - це природно</h1>
-						<p class="hero-description description">
+						<h1 class="hero-title title" data-aos="fade-left">Мати емоційні проблеми - це природно</h1>
+						<p class="hero-description description" data-aos="fade-left">
 							Я походжу з сім’ї, де 3 покоління терапевтів і психологів, і ніколи не сумнівався, що допомагати людям
 							знаходити душевний спокій — це також і моє покликання. Протягом багатьох років я надаю індивідуальні та
 							сімейні консультації, зосереджуючись на тому, щоб допомогти вам усім досягти свого роду розумового дзен,
@@ -68,7 +72,9 @@
 							видів технік, я відчуваю себе повністю готовим допомогти вам повернути ваше психологічне здоров’я та
 							благополуччя на правильний шлях. Мій підхід витягне будь-кого з найглибшої депресивної ями!
 						</p>
-						<button type="button" class="hero-btn btn">Зв'яжіться зі мною</button>
+						<button type="button" class="hero-btn btn" data-aos="fade-up" data-aos-anchor-placement="top-bottom"
+							>Зв'яжіться зі мною</button
+						>
 					</div>
 				</div>
 			</section>
@@ -76,8 +82,8 @@
 			<section class="work" id="work">
 				<div class="container">
 					<h2 class="work-title title">Мій підхід</h2>
-					<ul class="work-list list animate__animated animate__backInLeft">
-						<li class="work-item">
+					<ul class="work-list list">
+						<li class="work-item" data-aos="flip-left">
 							<svg class="work-icon" width="80" height="80">
 								<use href="./images/symbol-defs.svg#icon-checkmark2"></use>
 							</svg>
@@ -87,7 +93,7 @@
 								не як проблеми, які потрібно виправити чи викорінити, а радше як важливі показання та знання
 							</p>
 						</li>
-						<li class="work-item">
+						<li class="work-item" data-aos="flip-left">
 							<svg class="work-icon" width="80" height="80">
 								<use href="./images/symbol-defs.svg#icon-checkmark2"></use>
 							</svg>
@@ -97,7 +103,7 @@
 								адаптувати мій підхід до консультування з урахуванням унікальних обставин кожного окремого пацієнта.
 							</p>
 						</li>
-						<li class="work-item">
+						<li class="work-item" data-aos="flip-left">
 							<svg class="work-icon" width="80" height="80">
 								<use href="./images/symbol-defs.svg#icon-checkmark2"></use>
 							</svg>
@@ -107,7 +113,7 @@
 								фахівець із консультування, я докладу всіх зусиль щоб усунути перше та розширити можливості другого.
 							</p>
 						</li>
-						<li class="work-item">
+						<li class="work-item" data-aos="flip-left">
 							<svg class="work-icon" width="80" height="80">
 								<use href="./images/symbol-defs.svg#icon-checkmark2"></use>
 							</svg>
@@ -117,7 +123,7 @@
 								мотиваціями та цілями. Я сприяю та допомагаю підтримувати процес, який ми створюємо разом.
 							</p>
 						</li>
-						<li class="work-item">
+						<li class="work-item" data-aos="flip-left">
 							<svg class="work-icon" width="80" height="80">
 								<use href="./images/symbol-defs.svg#icon-checkmark2"></use>
 							</svg>
@@ -127,7 +133,7 @@
 								сприймати комплексно. Тут однаково важливі тіло, серце, розум і дух.
 							</p>
 						</li>
-						<li class="work-item">
+						<li class="work-item" data-aos="flip-left">
 							<svg class="work-icon" width="80" height="80">
 								<use href="./images/symbol-defs.svg#icon-checkmark2"></use>
 							</svg>
@@ -145,16 +151,16 @@
 				<div class="container">
 					<h2 class="certificates-title title">Сертифікати</h2>
 					<ul class="certificates-list list">
-						<li class="certificates-item">
+						<li class="certificates-item" data-aos="zoom-in-up">
 							<img src="./images/sertuficat1.jpeg" alt="сертефікат" width="270" height="180" />
 						</li>
-						<li class="certificates-item">
+						<li class="certificates-item" data-aos="zoom-in-up">
 							<img src="./images/sertuficat2.jpeg" alt="сертефікат" width="270" height="180" />
 						</li>
-						<li class="certificates-item">
+						<li class="certificates-item" data-aos="zoom-in-up">
 							<img src="./images/sertuficat3.jpeg" alt="сертефікат" width="270" height="180" />
 						</li>
-						<li class="certificates-item">
+						<li class="certificates-item" data-aos="zoom-in-up">
 							<img src="./images/sertufikat.jpeg" alt="сертефікат" width="270" height="180" />
 						</li>
 					</ul>
@@ -165,7 +171,7 @@
 				<div class="container">
 					<h2 class="services-title title">Послуги</h2>
 					<ul class="services-list list">
-						<li class="services-item">
+						<li class="services-item" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
 							<img src="./images/terapia.jpeg" alt="" width="300" height="" />
 							<div class="services-content">
 								<h3 class="services-subtitle subtitle">
@@ -176,7 +182,7 @@
 								<p>55 хв.</p>
 							</div>
 						</li>
-						<li class="services-item">
+						<li class="services-item" data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine">
 							<img src="./images/terapia.jpeg" alt="" width="300" height="" />
 							<div class="services-content">
 								<h3 class="services-subtitle subtitle">Коуч сесія</h3>
@@ -184,7 +190,7 @@
 								<p>55 хв.</p>
 							</div>
 						</li>
-						<li class="services-item">
+						<li class="services-item" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
 							<img src="./images/terapia.jpeg" alt="" width="300" height="" />
 							<div class="services-content">
 								<h3 class="services-subtitle subtitle">Групова терапія</h3>
@@ -192,7 +198,7 @@
 								<p>3-4 год.</p>
 							</div>
 						</li>
-						<li class="services-item">
+						<li class="services-item" data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine">
 							<img src="./images/terapia.jpeg" alt="" width="300" height="" />
 							<div class="services-content">
 								<h3 class="services-subtitle subtitle">Груповий ретрит</h3>
@@ -220,7 +226,12 @@
 				<div class="container">
 					<h2 class="registration-title title">Як потрапити на терапію</h2>
 					<ul class="registration-list list">
-						<li class="registration-item">
+						<li
+							class="registration-item"
+							data-aos="flip-left"
+							data-aos-easing="ease-out-cubic"
+							data-aos-duration="2000"
+						>
 							<div class="registration-number"
 								><svg class="registration-icon">
 									<use href="./images/symbol-defs.svg#icon-number1"></use>
@@ -263,11 +274,19 @@
 						</li>
 					</ul>
 					<div class="registration-btn">
-						<a href="/" class="btn link" target="_blank" rel="noreferrer noopener">Заповнити форму</a>
+						<a
+							href="/"
+							class="btn link"
+							target="_blank"
+							rel="noreferrer noopener"
+							data-aos="fade-up"
+							data-aos-anchor-placement="top-bottom"
+							>Заповнити форму</a
+						>
 					</div>
 				</div>
 			</section>
-      <!----------excerption---------->
+			<!----------excerption---------->
 			<section class="excerption">
 				<div class="container">
 					<p class="excerption-description description">
@@ -407,5 +426,9 @@
 		</footer>
 
 		<script src="./js/main.js"></script>
+		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+		<script>
+			AOS.init();
+		</script>
 	</body>
 </html>
