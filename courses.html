@@ -5,14 +5,19 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Helena Flyunt</title>
+		<!-- ---Шрифти Google--- -->
 		<link
 			href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Raleway:wght@700&display=swap"
 			rel="stylesheet"
 		/>
+		<!-- ---Нормалайз--- -->
 		<link
 			rel="stylesheet"
 			href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
 		/>
+		<!-- ---Анімація на скрол сторінки--- -->
+		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+		<!-- ---СSS--- -->
 		<link rel="stylesheet" href="./css/style.css" />
 	</head>
 	<body>
@@ -49,46 +54,55 @@
 			<!-- ------------Club----------- -->
 			<section class="club">
 				<div class="club-container container">
-					<h1 class="club-title title">Клуб Думай Відчувай Дій</h1>
+					<div class="club-content-text">
+						<h1 class="club-title title" data-aos="flip-up" data-aos-easing="linear" data-aos-duration="400"
+							>Клуб Думай Відчувай Дій</h1
+						>
+						<p class="club-description description"
+							>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae sequi commodi eaque, incidunt expedita
+							debitis, laborum odit error sapiente adipisci modi officia, velit distinctio natus sunt tenetur doloribus
+							facilis praesentium!</p
+						>
+					</div>
 					<ul class="club-list list">
 						<li class="club-item">
 							<div class="club-img"><img src="./images/malibu.jpeg" alt="Фото клубу" width="280" height="220" /> </div>
 							<div class="club-text">
-								<h2 class="club-subtitle subtitle">Приєднатись</h2>
+								<h2 class="club-subtitle subtitle">Частина перша</h2>
 								<p class="clube-description description"
 									>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus eveniet, quisquam architecto
 									repellat neque cupiditate. Ut repudiandae beatae, ad repellat exercitationem facere quae, hic iusto
 									consectetur, vero maxime esse sit.</p
 								>
 							</div>
-							<div class="club-btn">
+							<div class="club-btn" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="700">
 								<button class="btn" data-modal-open>Вступити в клуб</button>
 							</div>
 						</li>
 						<li class="club-item">
 							<div class="club-img"><img src="./images/malibu.jpeg" alt="Фото клубу" width="320" height="220" /> </div>
 							<div class="club-text">
-								<h2 class="club-subtitle subtitle">Приєднатись</h2>
+								<h2 class="club-subtitle subtitle">Частина друга</h2>
 								<p class="clube-description description"
-									>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus eveniet, quisquam architecto
-									repellat neque cupiditate.
+									>9 тем, 9 рівнів якими ми будемо занурюватися у глибини особистості, злущуючи шар за шаром, аж поки не
+									дістанемося серцевини - справжнього Я.
 								</p>
 							</div>
-							<div class="club-btn">
+							<div class="club-btn" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="700">
 								<button class="btn" data-modal-open-1>Вступити в клуб</button>
 							</div>
 						</li>
 						<li class="club-item">
 							<div class="club-img"><img src="./images/malibu.jpeg" alt="Фото клубу" width="280" height="220" /> </div>
 							<div class="club-text">
-								<h2 class="club-subtitle subtitle">Приєднатись</h2>
+								<h2 class="club-subtitle subtitle">Частина третя</h2>
 								<p class="clube-description description"
 									>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus eveniet, quisquam architecto
 									repellat neque cupiditate. Ut repudiandae beatae, ad repellat exercitationem facere quae, hic iusto
 									consectetur, vero maxime esse sit.</p
 								>
 							</div>
-							<div class="club-btn">
+							<div class="club-btn" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="700">
 								<button class="btn" data-modal-open-2>Вступити в клуб</button>
 							</div>
 						</li>
@@ -194,13 +208,7 @@
 						<use href="./images/symbol-defs.svg#icon-close"></use>
 					</svg>
 				</button>
-        <a
-					href=""
-					target="_blank"
-					rel="noopener noreferrer nofollow"
-					class="modal-link link"
-					>Оплатити</a
-				>
+				<a href="" target="_blank" rel="noopener noreferrer nofollow" class="modal-link link">Оплатити</a>
 			</div>
 		</div>
 		<div class="backdrop is-hidden" data-modal-2>
@@ -210,16 +218,14 @@
 						<use href="./images/symbol-defs.svg#icon-close"></use>
 					</svg>
 				</button>
-        <a
-					href=""
-					target="_blank"
-					rel="noopener noreferrer nofollow"
-					class="modal-link link"
-					>Оплатити</a
-				>
+				<a href="" target="_blank" rel="noopener noreferrer nofollow" class="modal-link link">Оплатити</a>
 			</div>
 		</div>
 
 		<script src="./js/main.js"></script>
+		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+		<script>
+			AOS.init();
+		</script>
 	</body>
 </html>
