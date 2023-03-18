@@ -181,7 +181,7 @@
 		<!------------footer----------->
 		<footer>
 			<div class="container logo-pay">
-				<img src="./images/logo-pay.png" alt="платіжна система" width="240" />
+				<img src="./images/payment.png" alt="платіжна система" width="240" />
 				<a
 					href="https://drive.google.com/file/d/13gwgaUFOQeu13-ioGPh7Gez4sTr6Mhuy/view?usp=sharing"
 					target="_blank"
@@ -202,25 +202,54 @@
 						</svg>
 					</button>
 				</div>
-				<div class="modal-input">
-					<a
-						href="https://secure.wayforpay.com/button/b1a8d2d19861b"
-						target="_blank"
-						rel="noopener noreferrer nofollow"
-						class="modal-link link"
-						>Оплатити</a
-					>
-					<p class="modal-offer"
-						>Натискаючи на кнопку "Оплатити" ви погоджуєтеся з <br />
+				<p class="form-title">Клуб</p>
+				<form class="modal-form" name="signup_form" autocomplete="on" novalidate>
+					<div class="modal-group">
+						<label class="form-label" for="username">Ім'я</label>
+						<input class="form-input" type="text" name="username" id="username" required />
+						<svg class="form-icon" width="18" height="18">
+							<use href="./images/symbol-defs.svg#icon-person-black"></use>
+						</svg>
+					</div>
+					<div class="modal-group">
+						<label class="form-label" for="tel">Телефон</label>
+						<input class="form-input" type="tel" name="tel" id="tel" required />
+						<svg class="form-icon" width="13" height="13">
+							<use href="./images/symbol-defs.svg#icon-tel"></use>
+						</svg>
+					</div>
+					<div class="modal-group">
+						<label class="form-label" for="email">Електронна адреса</label>
+						<input class="form-input" type="email" name="email" id="email" required />
+						<svg class="form-icon" width="15" height="12">
+							<use href="./images/symbol-defs.svg#icon-mail"></use>
+						</svg>
+					</div>
+					<div class="modal-group-textarea">
+						<label class="form-label" for="comment">Коментар</label>
+						<textarea class="form-textarea" name="comment" id="comment"></textarea>
+					</div>
+					<div class="modal-group-btn">
 						<a
-							href="https://drive.google.com/file/d/13gwgaUFOQeu13-ioGPh7Gez4sTr6Mhuy/view?usp=sharing"
+							href="https://secure.wayforpay.com/button/b1a8d2d19861b"
+							type="submit"
 							target="_blank"
 							rel="noopener noreferrer nofollow"
-							class="offer-link link"
-							>Договором публічної оферти</a
-						></p
-					>
-				</div>
+							class="modal-link link"
+							>Оплатити</a
+						>
+						<p class="modal-offer"
+							>Натискаючи на кнопку "Оплатити" ви погоджуєтеся з <br />
+							<a
+								href="https://drive.google.com/file/d/13gwgaUFOQeu13-ioGPh7Gez4sTr6Mhuy/view?usp=sharing"
+								target="_blank"
+								rel="noopener noreferrer nofollow"
+								class="offer-link link"
+								>Договором публічної оферти</a
+							></p
+						>
+					</div>
+				</form>
 			</div>
 		</div>
 		<div class="backdrop is-hidden" data-modal-1>
