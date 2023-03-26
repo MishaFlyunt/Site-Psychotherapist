@@ -1,6 +1,13 @@
 @media screen and (min-width: 768px) {
 	/* ---------HEADER----------- */
 
+	.header {
+		position: fixed;
+		z-index: 10;
+		top: 0;
+		left: 0;
+	}
+
 	.header .container {
 		display: flex;
 		align-items: center;
@@ -74,17 +81,8 @@
 
 	.hero {
 		padding: 50px 0;
-		/* background-image: url(/images/font.jpeg); */
 
-		max-width: 1450px;
 		height: 800px;
-		margin-left: auto;
-		margin-right: auto;
-
-		background: linear-gradient(64deg, var(--logo-color) 15%, var(--logo-color-2) 75%);
-		background-repeat: no-repeat;
-		background-position: center;
-		background-size: cover;
 	}
 
 	.hero .container {

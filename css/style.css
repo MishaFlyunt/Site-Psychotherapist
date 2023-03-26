@@ -59,8 +59,6 @@ body {
 	line-height: 1.5;
 	letter-spacing: 0.02em;
 	color: var(--text-color);
-
-	padding-top: 75px;
 }
 
 .title {
@@ -152,6 +150,10 @@ body {
 	.container {
 		max-width: 768px;
 	}
+
+	body {
+		padding-top: 75px;
+	}
 }
 
 /* @media screen and (min-width: 768px) and (max-width: 1199px) {
@@ -173,11 +175,8 @@ body {
 .header {
 	background-color: var(--header-bg);
 
-	position: fixed;
-	z-index: 10;
+	position: relative;
 	width: 100%;
-	top: 0;
-	left: 0;
 
 	border-bottom: 2px solid rgba(231, 232, 233, 0.443);
 }
@@ -275,9 +274,9 @@ body {
 
 	border-radius: 50%;
 
-	background-color: #e7e9fc;
+	background-color: var(--header-link-hover-color);
 	border: 1px solid rgba(0, 0, 0, 0.1);
-	color: rgb(0, 0, 0);
+	color: var(--btn-text-color);
 
 	cursor: pointer;
 
@@ -294,61 +293,67 @@ body {
 }
 
 .burger-list {
-	margin-bottom: 284px;
+	margin-bottom: 135px;
 }
 
 .burger-item:not(:last-child) {
-	margin-bottom: 40px;
+	margin-bottom: 30px;
 }
 
 .burger-link {
-	padding: 20px 0;
+	padding: 13px 0;
 
 	font-weight: 700;
 	font-size: 26px;
 	line-height: 1.11;
 
-	color: var(--primary-text-bg-color);
+	color: var(--text-color);
+}
+
+.burger-link.course {
+	color: var(--link-hover-text);
 }
 
 .burger-contact {
-	margin-bottom: 48px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 
-.burger-contact-item:not(:last-child) {
-	margin-bottom: 40px;
+.burger-btn {
+	max-width: 130px;
+	text-align: center;
+
+	margin-bottom: 50px;
 }
 
-.burger-tel {
-	font-weight: 600;
-	font-size: 24px;
-	line-height: 1.11;
-
-	color: var(--accent-color);
+.burger-social-list {
+	display: flex;
+	gap: 40px;
 }
 
-.burger-mail {
-	font-weight: 500;
-	font-size: 16px;
-	line-height: 1.2;
-
-	color: var(--description-tel-mail-color);
+.burger-social-link {
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
-.burger-link.current {
-	color: var(--accent-color);
+.burger-icon-social {
+	width: 40px;
+	height: 40px;
+
+	fill: var(--link-hover-text);
 }
 
 /* --------------HERO-------------- */
 
 .hero {
 	padding: 50px 0;
-	/* background-image: url(/images/font.jpeg); */
 
 	max-width: 1450px;
 	height: 800px;
-	margin-left: auto;
-	margin-right: auto;
+	/* margin-left: auto;
+	margin-right: auto; */
 
 	background: linear-gradient(64deg, var(--logo-color) 15%, var(--logo-color-2) 75%);
 	background-repeat: no-repeat;
@@ -357,25 +362,28 @@ body {
 }
 
 .hero .container {
-	display: flex;
-	gap: 30px;
+	/* display: flex; */
+
+	/* gap: 30px; */
 }
 
 .hero-img {
-	width: 50%;
+	width: 100%;
+
+	margin-bottom: 30px;
 }
 
 .hero-content {
-	display: flex;
+	/* display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	width: 50%;
+	width: 50%; */
 }
 
 .hero-title {
 	font-family: var(--secondaty-font);
-	font-size: 52px;
+	font-size: 32px;
 	line-height: 0.9;
 	letter-spacing: 0.05em;
 	text-align: center;
