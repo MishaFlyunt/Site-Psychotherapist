@@ -351,9 +351,7 @@ body {
 	padding: 50px 0;
 
 	max-width: 1450px;
-	height: 800px;
-	/* margin-left: auto;
-	margin-right: auto; */
+	height: 100%;
 
 	background: linear-gradient(64deg, var(--logo-color) 15%, var(--logo-color-2) 75%);
 	background-repeat: no-repeat;
@@ -388,7 +386,7 @@ body {
 	letter-spacing: 0.05em;
 	text-align: center;
 
-	margin-bottom: 45px;
+	margin-bottom: 40px;
 }
 
 .hero-description {
