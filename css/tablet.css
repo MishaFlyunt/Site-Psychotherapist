@@ -123,7 +123,9 @@
 	}
 
 	.work-title {
-		margin-bottom: 62px;
+		font-size: 42px;
+
+		margin-bottom: 72px;
 	}
 
 	.work-item {
@@ -137,6 +139,8 @@
 	}
 
 	.certificates-title {
+		font-size: 42px;
+
 		margin-bottom: 72px;
 	}
 
@@ -148,97 +152,50 @@
 	/* --------------Services------------- */
 
 	.services {
-		padding: 100px 0;
-		/* background-image: url(./images/malibu.jpeg); */
+		padding: 75px 0;
 	}
 
 	.services-title {
-		text-align: center;
+		font-size: 42px;
 
 		margin-bottom: 72px;
 	}
 
 	.services-list {
 		display: flex;
-		justify-content: space-between;
 		flex-wrap: wrap;
+		justify-content: center;
+		align-items: center;
 		gap: 24px;
 	}
 
-	.services-item {
-		/* width: calc((100%-24px) / 2); */
-	}
-
 	.services-block {
-		display: flex;
 		width: 100%;
-
-		transition: box-shadow 650ms cubic-bezier(0.4, 0, 0.2, 1);
-
-		border: 0.3px solid var(--logo-color-2);
-	}
-
-	.services-block:hover {
-		box-shadow: -1px 0px 25px 10px rgba(64, 110, 154, 0.32);
-
-		cursor: pointer;
 	}
 
 	.services-content {
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-		gap: 10px;
-
-		padding: 25px;
-
 		width: 275px;
-		height: 172px;
-		background-color: var(--logo-color-2);
-	}
-
-	.services-content p {
-		color: rgb(255, 255, 255);
-
-		font-size: 14px;
-		text-align: center;
-	}
-
-	.services-subtitle {
-		text-align: center;
-	}
-
-	.services-social-link {
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		width: 40px;
-		height: 40px;
-		border-radius: 50%;
-
-		background-color: rgba(255, 255, 255, 0.3);
-
-		transition: background-color 300ms cubic-bezier(0.4, 0, 0.2, 1), border-radius 300ms cubic-bezier(0.4, 0, 0.2, 1);
-	}
-
-	.services-social-link:hover {
-		background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
-		border-radius: 35%;
-	}
-
-	.services-icon {
-		fill: rgb(255, 255, 255);
 	}
 
 	/* --------------Registration------------- */
 
+	@media screen and (min-width: 768px) and (max-width: 1199px) {
+		.registration-content {
+			width: 100%;
+		}
+
+		.registration-list {
+			justify-content: center;
+			flex-wrap: wrap;
+		}
+	}
+
 	.registration {
-		padding: 100px 0;
+		padding: 75px 0;
 	}
 
 	.registration-title {
-		text-align: center;
+		font-size: 42px;
 
 		margin-bottom: 72px;
 	}
@@ -249,63 +206,7 @@
 	}
 
 	.registration-item {
-		width: calc((100%-60px) / 3);
-	}
-
-	.registration-block {
-		display: flex;
-
-		width: 100%;
-		height: 100%;
-		padding: 20px;
-		border-radius: 12px;
-
-		background-color: rgb(235, 235, 235);
-
-		transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1);
-	}
-
-	.registration-block:hover {
-		box-shadow: -1px 0px 25px 10px rgba(64, 110, 154, 0.32);
-		cursor: pointer;
-	}
-
-	.registration-number {
-		border-radius: 50%;
-		width: 50px;
-		height: 50px;
-
-		display: flex;
-		align-items: center;
-		justify-content: center;
-
-		margin-right: 10px;
-
-		background-color: #ffffff;
-	}
-
-	.registration-icon {
-		fill: var(--logo-color-2);
-		width: 50px;
-		height: 50px;
-	}
-
-	.registration-content {
-		display: flex;
-		flex-direction: column;
-
-		max-width: 290px;
-	}
-
-	.registration-subtitle {
-		margin-bottom: 15px;
-	}
-
-	.registration-btn {
-		display: flex;
-		justify-content: center;
-
-		margin-top: 40px;
+		width: 70%;
 	}
 
 	/* ------------FAQ------------ */
