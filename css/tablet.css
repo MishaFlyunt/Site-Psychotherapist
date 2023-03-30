@@ -212,7 +212,7 @@
 	/* ------------FAQ------------ */
 
 	.faq-section {
-		padding: 100px 0;
+		padding: 75px 0;
 	}
 
 	.wraper {
@@ -220,101 +220,31 @@
 	}
 
 	.faq-title {
-		text-align: center;
-
+		font-size: 42px;
 		margin-bottom: 72px;
 	}
 
 	.acardion {
-		background-color: white;
-		color: black;
-
-		cursor: pointer;
-
 		font-size: 20px;
 		width: 100%;
 		padding: 20px 30px;
-		border: none;
-		outline: none;
-		transition: 0.4s;
-
-		display: flex;
-		justify-content: space-between;
-
-		transition: background-color 400ms cubic-bezier(0.4, 0, 0.2, 1), color 400ms cubic-bezier(0.4, 0, 0.2, 1);
-
-		fill: var(--logo-color);
-	}
-
-	.active,
-	.acardion:hover {
-		background-color: var(--logo-color);
-		color: rgb(255, 255, 255);
-
-		fill: currentColor;
-	}
-
-	.panel {
-		padding: 20px;
-		background-color: white;
-		overflow: hidden;
-
-		display: none;
 	}
 
 	.panel p {
-		color: rgba(0, 0, 0, 0.6);
 		font-size: 16px;
-		line-height: 1.4;
-	}
-
-	.faq {
-		border: 1px solid rgba(0, 0, 0, 0.2);
-		margin: 10px 0;
-	}
-
-	.faq.active {
-		border: 1px solid var(--logo-color);
-		border-radius: 4px;
 	}
 
 	/* -------------excerption----------- */
 
-	.excerption {
-		padding: 50px 0;
-
-		background: linear-gradient(44deg, var(--logo-color-2) 35%, var(--logo-color) 65%);
-	}
-
-	.excerption .container {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-	}
-
 	.excerption-description {
-		max-width: 650px;
-
-		font-size: 30px;
-		text-align: center;
-		font-style: oblique;
-	}
-
-	.excerption-description {
-		margin-bottom: 30px;
-	}
-
-	.author {
-		text-align: center;
+		max-width: 480px;
+		font-size: 26px;
 	}
 
 	/* ----------contact---------- */
 
 	.contact {
-		background-color: #40426d;
-
 		padding: 50px 0 10px;
-		border-bottom: 1px solid rgb(192, 191, 190);
 	}
 
 	.address-container {
@@ -360,11 +290,7 @@
 		display: flex;
 		align-items: center;
 		justify-content: center;
-		width: 270px;
-	}
-
-	.contact-logo .logo {
-		padding: 0;
+		width: 170px;
 	}
 
 	.contact-social {
@@ -372,12 +298,6 @@
 		flex-direction: column;
 		align-items: flex-end;
 		width: 270px;
-
-		color: rgb(255, 255, 255);
-	}
-
-	.contact-social .link {
-		color: #ffffff;
 	}
 
 	.social-item-insta {
@@ -386,22 +306,12 @@
 
 	.social-link {
 		position: relative;
-
-		color: rgb(255, 255, 255);
-
-		transition: color 300ms cubic-bezier(0.4, 0, 0.2, 1);
 	}
 
 	.contact-icon-social {
 		position: absolute;
 		left: -29px;
 		top: 1px;
-
-		fill: currentColor;
-	}
-
-	.social-link:is(:hover, :focus) {
-		color: var(--link-hover-text);
 	}
 
 	.telegram {
@@ -410,29 +320,8 @@
 
 	/* ------------footer----------- */
 
-	.logo-pay {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-
-		padding: 5px 0 5px;
-	}
-
 	.offer-link {
-		font-weight: 700;
-		margin-bottom: 7px;
-		color: var(--btn-text-hover-color);
-
-		transition: color 200ms cubic-bezier(0.4, 0, 0.2, 1), font-weight 200ms cubic-bezier(0.4, 0, 0.2, 1);
-	}
-
-	.offer-link:is(:hover, :focus) {
-		color: var(--link-hover-text);
-	}
-
-	.copyright {
-		font-size: 14px;
-		line-height: 1.2;
+		font-size: 15px;
 	}
 
 	/* ------------Page 2---------- */
