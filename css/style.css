@@ -802,7 +802,7 @@ body {
 /* ------------footer----------- */
 
 @media screen and (max-width: 767px) {
-	.logo-pay img{
+	.logo-pay img {
 		width: 180px;
 	}
 }
@@ -831,6 +831,50 @@ body {
 .copyright {
 	font-size: 10px;
 	line-height: 1.2;
+}
+
+/* ----------Скрол сторінки догори-------- */
+
+@media screen and (max-width: 1199px) {
+	.btn-up {
+		position: fixed;
+		right: 14px;
+		bottom: 20px;
+		z-index: 100;
+
+		background-color: transparent;
+		border: none;
+		outline: none;
+		
+		cursor: pointer;
+
+		display: flex;
+		align-items: center;
+		justify-content: center;
+
+		transition: opacity 0.3s ease-in-out;
+		color: var(--link-hover-text);
+
+		opacity: 0.4;
+	}
+
+	.btn-up-icon {
+		fill: currentColor;
+	}
+
+	.btn-up_hide {
+		display: none;
+	}
+
+	.btn-up_hiding {
+		opacity: 0;
+	}
+}
+
+@media screen and (min-width: 1200px) {
+	.btn-up{
+		display: none;
+	}
 }
 
 /* ------------Page 2---------- */
@@ -919,14 +963,14 @@ body {
 
 @media screen and (max-width: 420px) {
 	.modal {
-	width: 90%;
-}
+		width: 90%;
+	}
 }
 
 @media screen and (min-width: 421px) {
 	.modal {
-	width: 410px;
-}
+		width: 410px;
+	}
 }
 
 .backdrop {
