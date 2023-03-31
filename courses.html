@@ -19,6 +19,9 @@
 		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 		<!-- ---СSS--- -->
 		<link rel="stylesheet" href="./css/style.css" />
+		<link rel="stylesheet" href="./css/small-tablet.css" />
+		<link rel="stylesheet" href="./css/tablet.css" />
+		<link rel="stylesheet" href="./css/desktop.css" />
 	</head>
 	<body>
 		<!-- /* --------------HEADER-------------- */ -->
@@ -28,28 +31,87 @@
 					<a href="./index.html" class="logo link"><span class="ps">Helena</span><span class="name">Flyunt</span></a>
 					<ul class="header-list list">
 						<li class="header-item">
+							<a href="#hero" class="header-link link current">Про мене</a>
+						</li>
+						<li class="header-item">
+							<a href="#work" class="header-link link current">Мій підхід</a>
+						</li>
+						<li class="header-item">
+							<a href="#services" class="header-link link current">Послуги</a>
+						</li>
+						<li class="header-item">
+							<a href="#faq" class="header-link link current">Питання</a>
+						</li>
+						<li class="header-item">
 							<a href="./courses.html" class="header-link link course">Клуб</a>
 						</li>
-						<li class="header-item">
-							<a href="./index.html#hero" class="header-link link current">Про мене</a>
+					</ul>
+					<button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+						<svg class="burger-icon-open" width="32" height="22">
+							<use href="./images/symbol-defs.svg#icon-icon-menu"></use>
+						</svg>
+					</button>
+				</nav>
+				<a href="#registration" class="header-btn btn link">Реєстрація</a>
+				<!-- --------------Burger menu--------------- -->
+			</div>
+			<div class="menu-container js-menu-container" id="mobile-menu">
+				<button class="menu-toggle-close js-close-menu">
+					<svg class="modal-icon" width="8" height="8">
+						<use href="./images/symbol-defs.svg#icon-close"></use>
+					</svg>
+				</button>
+				<nav class="burger-navigation">
+					<ul class="burger-list list">
+						<li class="burger-item">
+							<a href="./index.html#hero" class="burger-link link">Про мене</a>
 						</li>
-						<li class="header-item">
-							<a href="./index.html#work" class="header-link link current">Мій підхід</a>
+						<li class="burger-item">
+							<a href="./index.html#work" class="burger-link link">Мій підхід</a>
 						</li>
-						<li class="header-item">
-							<a href="./index.html#services" class="header-link link current">Послуги</a>
+						<li class="burger-item">
+							<a href="./index.html#services" class="burger-link link">Послуги</a>
 						</li>
-						<li class="header-item">
-							<a href="./index.html#faq" class="header-link link current">Питання</a>
+						<li class="burger-item">
+							<a href="./index.html#faq" class="burger-link link">Питання</a>
+						</li>
+						<li class="burger-item">
+							<a href="./courses.html" class="burger-link link course">Клуб</a>
 						</li>
 					</ul>
 				</nav>
-				<a href="./index.html#registration" class="header-btn btn link">Реєстрація</a>
+				<div class="burger-contact">
+					<a href="#registration" class="burger-btn btn link">Реєстрація</a>
+					<ul class="burger-social-list list">
+						<li class="burger-item">
+							<a
+								href="https://www.instagram.com/lenaflyunt/?igshid=YmMyMTA2M2Y%3D"
+								class="burger-social-link link"
+								target="_blank"
+								rel="noopener noreferrer nofollow"
+								><svg class="burger-icon-social" width="20" height="20">
+									<use href="./images/symbol-defs.svg#icon-instagram1"></use>
+								</svg>
+							</a>
+						</li>
+						<li class="burger-item">
+							<a
+								href="https://t.me/flyuntelena"
+								class="burger-social-link link"
+								target="_blank"
+								rel="noopener noreferrer nofollow"
+								><svg class="burger-icon-social" width="23" height="23">
+									<use href="./images/symbol-defs.svg#icon-telegram"></use>
+								</svg>
+							</a>
+						</li>
+					</ul>
+				</div>
 			</div>
 		</header>
 		<main>
 			<!-- ------------Club----------- -->
-			<!-- <section class="club">
+			<section class="club">
 				<div class="club-container container">
 					<div class="club-content-text">
 						<h1 class="club-title title" data-aos="flip-up" data-aos-easing="linear" data-aos-duration="400"
@@ -108,9 +170,9 @@
 						</li>
 					</ul>
 				</div>
-			</section> -->
+			</section>
 			<!----------contact---------->
-			<!-- <section class="contact" id="contact">
+			<section class="contact" id="contact">
 				<div class="container">
 					<address class="address-container">
 						<ul class="contact-list list">
@@ -168,10 +230,10 @@
 						</ul>
 					</address>
 				</div>
-			</section> -->
+			</section>
 		</main>
 		<!------------footer----------->
-		<!-- <footer>
+		<footer>
 			<div class="container logo-pay">
 				<img src="./images/payment.png" alt="платіжна система" width="240" />
 				<a
@@ -183,9 +245,9 @@
 				</a>
 				<p lang="en" class="copyright">&copy;Copyright 2023</p>
 			</div>
-		</footer> -->
+		</footer>
 		<!-- --------------Modal--------------- -->
-		<!-- <div class="backdrop is-hidden" data-modal>
+		<div class="backdrop is-hidden" data-modal>
 			<div class="modal">
 				<div class="modal-btn">
 					<button class="btn-icon" data-modal-close>
@@ -237,14 +299,14 @@
 								target="_blank"
 								rel="noopener noreferrer nofollow"
 								class="offer-link link"
-								>Договором публічної оферти</a
+								>"Договором публічної оферти"</a
 							></p
 						>
 					</div>
 				</form>
 			</div>
-		</div> -->
-		<!-- <div class="backdrop is-hidden" data-modal-1>
+		</div>
+		<div class="backdrop is-hidden" data-modal-1>
 			<div class="modal">
 				<button class="btn-icon" data-modal-close-1>
 					<svg class="modal-icon" width="8" height="8">
@@ -263,7 +325,7 @@
 				</button>
 				<a href="" target="_blank" rel="noopener noreferrer nofollow" class="modal-link link">Оплатити</a>
 			</div>
-		</div> -->
+		</div>
 
 		<script src="./js/main.js"></script>
 		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>

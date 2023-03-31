@@ -163,7 +163,6 @@ body {
 .header {
 	background-color: var(--header-bg);
 
-	/* position: relative; */
 	width: 100%;
 
 	border-bottom: 2px solid rgba(231, 232, 233, 0.443);
@@ -220,9 +219,6 @@ body {
 
 .menu-container {
 	padding: 40px;
-
-	width: 100vw;
-	height: 100vh;
 
 	position: fixed;
 	top: 0;
@@ -338,7 +334,7 @@ body {
 .hero {
 	padding: 50px 0;
 
-	/* max-width: 1450px; */
+	max-width: 1450px;
 	height: 100%;
 
 	background: linear-gradient(64deg, var(--logo-color) 15%, var(--logo-color-2) 75%);
@@ -500,7 +496,6 @@ body {
 }
 
 .services {
-	position: relative;
 	padding: 50px 0;
 }
 
@@ -806,6 +801,12 @@ body {
 
 /* ------------footer----------- */
 
+@media screen and (max-width: 767px) {
+	.logo-pay img{
+		width: 180px;
+	}
+}
+
 .logo-pay {
 	display: flex;
 	flex-direction: column;
@@ -816,7 +817,7 @@ body {
 
 .offer-link {
 	font-weight: 700;
-	font-size: 14px;
+	font-size: 10px;
 	margin-bottom: 7px;
 	color: var(--btn-text-hover-color);
 
@@ -828,7 +829,7 @@ body {
 }
 
 .copyright {
-	font-size: 14px;
+	font-size: 10px;
 	line-height: 1.2;
 }
 
@@ -837,7 +838,7 @@ body {
 /* ------------Club----------- */
 
 .club {
-	padding: 70px 0 100px;
+	padding: 60px 0 70px;
 }
 
 .club-content-text {
@@ -849,18 +850,18 @@ body {
 }
 
 .club-title {
-	text-align: center;
-
+	font-size: 32px;
 	margin-bottom: 52px;
 }
 
 .club-description {
-	width: 70%;
+	width: 90%;
 	text-align: center;
 }
 
 .club-list {
 	display: flex;
+	flex-wrap: wrap;
 	justify-content: center;
 	gap: 40px;
 }
@@ -916,6 +917,18 @@ body {
 
 /* --------------Modal--------------- */
 
+@media screen and (max-width: 420px) {
+	.modal {
+	width: 90%;
+}
+}
+
+@media screen and (min-width: 421px) {
+	.modal {
+	width: 410px;
+}
+}
+
 .backdrop {
 	position: fixed;
 	top: 0;
@@ -936,7 +949,6 @@ body {
 .modal {
 	padding: 24px;
 
-	width: 410px;
 	height: 584px;
 	border-radius: 4px;
 	border: 1px solid var(--logo-color);
@@ -963,8 +975,7 @@ body {
 	align-items: center;
 	justify-content: center;
 
-	width: 24px;
-	height: 24px;
+	padding: 10px;
 	border-radius: 50%;
 
 	background-color: var(--logo-color);
