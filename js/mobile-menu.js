@@ -1,26 +1,45 @@
-(() => {
-	const mobileMenu = document.querySelector(".js-menu-container");
-	const openMenuBtn = document.querySelector(".js-open-menu");
-	const closeMenuBtn = document.querySelector(".js-close-menu");
+const menu = document.querySelector(".menu-body");
+const menuBtn = document.querySelector(".menu-icon");
 
-	const toggleMenu = () => {
-		const isMenuOpen = openMenuBtn.getAttribute("aria-expanded") === "true" || false;
-		openMenuBtn.setAttribute("aria-expanded", !isMenuOpen);
-		mobileMenu.classList.toggle("is-open");
+const body = document.body;
 
-		const scrollLockMethod = !isMenuOpen ? "disableBodyScroll" : "enableBodyScroll";
-		bodyScrollLock[scrollLockMethod](document.body);
-	};
-
-	openMenuBtn.addEventListener("click", toggleMenu);
-	closeMenuBtn.addEventListener("click", toggleMenu);
-
-	// Close the mobile menu on wider screens if the device orientation changes
-
-	window.matchMedia("(min-width: 768px)").addEventListener("change", e => {
-		if (!e.matches) return;
-		mobileMenu.classList.remove("is-open");
-		openMenuBtn.setAttribute("aria-expanded", false);
-		bodyScrollLock.enableBodyScroll(document.body);
+if (menu && menuBtn) {
+	menuBtn.addEventListener("click", e => {
+		menu.classList.toggle("active");
+		menuBtn.classList.toggle("active");
+		body.classList.toggle("lock");
 	});
-})();
+
+	menu.addEventListener("click", e => {
+		if (e.target.classList.contains("menu-body")) {
+			menu.classList.remove("active");
+			menuBtn.classList.remove("active");
+			body.classList.remove("lock");
+		}
+	});
+
+	menu.querySelectorAll(".menu-link, .header-btn, .burger-social-link").forEach(link => {
+		link.addEventListener("click", () => {
+			menu.classList.remove("active");
+			menuBtn.classList.remove("active");
+			body.classList.remove("lock");
+		});
+	});
+}
+
+/*===========================================*/
+
+const anchors = document.querySelectorAll('a[href*="#"]');
+
+anchors.forEach(anchor => {
+	anchor.addEventListener("click", event => {
+		event.preventDefault();
+
+		const blockID = anchor.getAttribute("href").substring(1);
+
+		document.getElementById(blockID).scrollIntoView({
+			behavior: "smooth",
+			block: "start",
+		});
+	});
+});

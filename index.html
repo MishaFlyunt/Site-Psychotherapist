@@ -26,6 +26,53 @@
 	<body>
 		<!-- /* --------------HEADER-------------- */ -->
 		<header class="header">
+			<div class="header-menu container">
+				<a href="./index.html" class="logo link"><span class="ps">Helena</span><span class="name">Flyunt</span></a>
+				<div class="menu-icon">
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
+				<nav class="menu-body">
+					<svg class="menu-toggle-close" width="28" height="28">
+						<use href="./images/symbol-defs.svg#icon-close"></use>
+					</svg>
+						<ul class="menu-list list">
+							<li class="menu-item"><a href="#hero" class="menu-link link">Про мене</a></li>
+							<li class="menu-item"><a href="#work" class="menu-link link">Мій підхід</a></li>
+							<li class="menu-item"><a href="#services" class="menu-link link">Послуги</a></li>
+							<li class="menu-item"><a href="#faq" class="menu-link link">Питання</a></li>
+							<li class="menu-item"><a href="./courses.html" class="menu-link link course">Клуб</a></li>
+						</ul>
+						<a href="#registration" class="burger-btn btn link">Реєстрація</a>
+						<ul class="burger-social-list list">
+							<li class="burger-item">
+								<a
+									href="https://www.instagram.com/lenaflyunt/?igshid=YmMyMTA2M2Y%3D"
+									class="burger-social-link link"
+									target="_blank"
+									rel="noopener noreferrer nofollow"
+									><svg class="burger-icon-social" width="20" height="20">
+										<use href="./images/symbol-defs.svg#icon-instagram1"></use>
+									</svg>
+								</a>
+							</li>
+							<li class="burger-item">
+								<a
+									href="https://t.me/flyuntelena"
+									class="burger-social-link link"
+									target="_blank"
+									rel="noopener noreferrer nofollow"
+									><svg class="burger-icon-social" width="23" height="23">
+										<use href="./images/symbol-defs.svg#icon-telegram"></use>
+									</svg>
+								</a>
+							</li>
+						</ul>
+				</nav>
+			</div>
+		</header>
+		<!-- <header class="header">
 			<div class="container">
 				<nav class="header-navigation">
 					<a href="./index.html" class="logo link"><span class="ps">Helena</span><span class="name">Flyunt</span></a>
@@ -53,62 +100,8 @@
 					</button>
 				</nav>
 				<a href="#registration" class="header-btn btn link">Реєстрація</a>
-				<!-- --------------Burger menu--------------- -->
 			</div>
-			<div class="menu-container js-menu-container" id="mobile-menu">
-				<button class="menu-toggle-close js-close-menu">
-					<svg class="modal-icon" width="8" height="8">
-						<use href="./images/symbol-defs.svg#icon-close"></use>
-					</svg>
-				</button>
-				<nav class="burger-navigation">
-					<ul class="burger-list list">
-						<li class="burger-item">
-							<a href="#hero" class="burger-link link">Про мене</a>
-						</li>
-						<li class="burger-item">
-							<a href="#work" class="burger-link link">Мій підхід</a>
-						</li>
-						<li class="burger-item">
-							<a href="#services" class="burger-link link">Послуги</a>
-						</li>
-						<li class="burger-item">
-							<a href="#faq" class="burger-link link">Питання</a>
-						</li>
-						<li class="burger-item">
-							<a href="./courses.html" class="burger-link link course">Клуб</a>
-						</li>
-					</ul>
-				</nav>
-				<div class="burger-contact">
-					<a href="#registration" class="burger-btn btn link">Реєстрація</a>
-					<ul class="burger-social-list list">
-						<li class="burger-item">
-							<a
-								href="https://www.instagram.com/lenaflyunt/?igshid=YmMyMTA2M2Y%3D"
-								class="burger-social-link link"
-								target="_blank"
-								rel="noopener noreferrer nofollow"
-								><svg class="burger-icon-social" width="20" height="20">
-									<use href="./images/symbol-defs.svg#icon-instagram1"></use>
-								</svg>
-							</a>
-						</li>
-						<li class="burger-item">
-							<a
-								href="https://t.me/flyuntelena"
-								class="burger-social-link link"
-								target="_blank"
-								rel="noopener noreferrer nofollow"
-								><svg class="burger-icon-social" width="23" height="23">
-									<use href="./images/symbol-defs.svg#icon-telegram"></use>
-								</svg>
-							</a>
-						</li>
-					</ul>
-				</div>
-			</div>
-		</header>
+		</header> -->
 		<main>
 			<!-- /* --------------HERO-------------- */ -->
 			<section class="hero" id="hero">
@@ -345,7 +338,7 @@
 								</div>
 							</div>
 						</li>
-						<li class="registration-item" data-aos="fade-right" data-aos-easing="linear" data-aos-duration="600"
+						<li class="registration-item" data-aos="fade-right"
 							><div class="registration-block">
 								<div class="registration-number"
 									><svg class="registration-icon">
@@ -360,7 +353,7 @@
 								</div>
 							</div>
 						</li>
-						<li class="registration-item" data-aos="fade-right" data-aos-easing="linear" data-aos-duration="600"
+						<li class="registration-item" data-aos="fade-right"
 							><div class="registration-block">
 								<div class="registration-number"
 									><svg class="registration-icon">
@@ -528,6 +521,61 @@
 			</div>
 		</footer>
 
+		<!-- --------------Burger menu--------------- -->
+		<!-- <div class="menu-container js-menu-container" id="mobile-menu">
+			<button class="menu-toggle-close js-close-menu">
+				<svg class="modal-icon" width="8" height="8">
+					<use href="./images/symbol-defs.svg#icon-close"></use>
+				</svg>
+			</button>
+			<nav class="burger-navigation">
+				<ul class="burger-list list">
+					<li class="burger-item">
+						<a href="#hero" class="burger-link link">Про мене</a>
+					</li>
+					<li class="burger-item">
+						<a href="#work" class="burger-link link">Мій підхід</a>
+					</li>
+					<li class="burger-item">
+						<a href="#services" class="burger-link link">Послуги</a>
+					</li>
+					<li class="burger-item">
+						<a href="#faq" class="burger-link link">Питання</a>
+					</li>
+					<li class="burger-item">
+						<a href="./courses.html" class="burger-link link course">Клуб</a>
+					</li>
+				</ul>
+			</nav>
+			<div class="burger-contact">
+				<a href="#registration" class="burger-btn btn link">Реєстрація</a>
+				<ul class="burger-social-list list">
+					<li class="burger-item">
+						<a
+							href="https://www.instagram.com/lenaflyunt/?igshid=YmMyMTA2M2Y%3D"
+							class="burger-social-link link"
+							target="_blank"
+							rel="noopener noreferrer nofollow"
+							><svg class="burger-icon-social" width="20" height="20">
+								<use href="./images/symbol-defs.svg#icon-instagram1"></use>
+							</svg>
+						</a>
+					</li>
+					<li class="burger-item">
+						<a
+							href="https://t.me/flyuntelena"
+							class="burger-social-link link"
+							target="_blank"
+							rel="noopener noreferrer nofollow"
+							><svg class="burger-icon-social" width="23" height="23">
+								<use href="./images/symbol-defs.svg#icon-telegram"></use>
+							</svg>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div> -->
+
 		<!------------Скрол догори сайту----------->
 		<button class="btn-up btn-up_hide">
 			<svg class="btn-up-icon" width="53" height="53">
@@ -535,13 +583,13 @@
 			</svg>
 		</button>
 
-		<script src="./js/main.js"></script>
+		<script src="./js/modal-form.js"></script>
+		<script src="./js/mobile-menu.js"></script>
+		<script src="./js/btn-scroll-header.js"></script>
+		<script src="./js/faq.js"></script>
 		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 		<script>
 			AOS.init();
 		</script>
-		<script src="./js/mobile-menu.js"></script>
-		<script src="./js/btn-scroll-header.js"></script>
-		<script src="./js/link-scroll-id.js"></script>
 	</body>
 </html>
