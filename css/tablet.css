@@ -3,77 +3,49 @@
 
 	.header {
 		position: fixed;
-		z-index: 10;
+		z-index: 99;
 		top: 0;
 		left: 0;
 	}
 
-	.header .container {
+	/* -----burger menu----- */
+
+	.menu-body {
 		display: flex;
-		align-items: center;
+		gap: 43px;
 	}
 
-	.header-navigation {
-		display: flex;
-		align-items: center;
-		gap: 42px;
-	}
-
-	.header-list {
+	.menu-list {
 		display: flex;
 		gap: 18px;
 	}
 
-	.header-link {
+	.menu-link {
+		display: block;
+
 		color: var(--header-link-color);
+		padding: 14px 0;
 
-		padding: 20px 0 10px;
-		position: relative;
-
-		transition: color 300ms cubic-bezier(0.4, 0, 0.2, 1);
+		font-weight: 700;
+		font-size: 14px;
+		line-height: 1.11;
 	}
 
-	.course {
-		color: var(--logo-color);
-
-		font-weight: 900;
-	}
-
-	.header-item .course:is(:hover, :focus) {
+	.menu-link.course {
 		color: var(--link-hover-text);
 	}
 
-	.header-link:is(:hover, :focus) {
-		color: var(--header-link-hover-color);
+	.menu-wraper {
+		display: flex;
+		justify-content: center;
+		align-items: center;
 	}
 
-	.current:hover:after {
-		content: "";
-		display: block;
-		min-width: 100%;
-		height: 2px;
-
-		position: absolute;
-		bottom: 0;
-		left: 0;
-
-		background-color: var(--header-link-hover-color);
-		border-radius: 2px;
-
-		transition: background-color 300ms cubic-bezier(0.4, 0, 0.2, 1);
+	.menu-toggle-close {
+		display: none;
 	}
 
-	@media screen and (min-width: 768px) and (max-width: 1199px) {
-		.header-btn {
-			margin-left: auto;
-			padding: 8px 12px;
-		}
-	}
-
-	/* -----burger menu----- */
-
-	.menu-toggle,
-	.menu-container {
+	.burger-social-list {
 		display: none;
 	}
 
@@ -344,5 +316,4 @@
 	.club-description {
 		width: 70%;
 	}
-
 }

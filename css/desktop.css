@@ -1,16 +1,18 @@
 @media screen and (min-width: 1200px) {
 	/* ---------HEADER----------- */
 
-	.header-navigation {
-		gap: 180px;
+	/* -----burger menu----- */
+
+	.menu-body {
+		gap: 200px;
 	}
 
-	.header-list {
+	.menu-list {
 		gap: 40px;
 	}
 
-	.header-btn {
-		margin-left: auto;
+	.menu-link {
+		font-size: 16px;
 	}
 
 	/* --------------HERO-------------- */
@@ -118,5 +120,4 @@
 		font-size: 52px;
 		margin-bottom: 52px;
 	}
-
 }
