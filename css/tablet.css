@@ -24,6 +24,10 @@
 		line-height: 1.11;
 	}
 
+	.menu-link--active {
+		color: var(--header-link-color-js);
+	}
+
 	.menu-link.course {
 		color: var(--link-hover-text);
 	}
@@ -259,7 +263,6 @@
 	}
 
 	.contact-social {
-		display: flex;
 		flex-direction: column;
 		align-items: flex-end;
 		width: 270px;

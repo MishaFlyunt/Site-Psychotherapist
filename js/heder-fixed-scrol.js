@@ -1,5 +1,5 @@
 const header = document.querySelector('.header');
-const first = document.querySelector('.hero');
+const first = document.querySelector(".hero, .club");
 const headerHeight = header.offsetHeight;
 const firstHeight = first.offsetHeight;
 let lastScrollTop = 0;
