@@ -5,7 +5,7 @@
 
 	--header-link-color: rgb(33, 86, 86);
 	--header-link-hover-color: var(--logo-color);
-	--header-bg: rgba(235, 233, 233, 0.3);
+	--header-bg: rgba(235, 233, 233, 0.7);
 	/* btn */
 	--btn-bg-color: var(--logo-color-2);
 	--btn-text-color: rgb(255, 255, 255);
@@ -149,10 +149,6 @@ body.lock {
 	.container {
 		max-width: 768px;
 	}
-
-	body {
-		padding-top: 75px;
-	}
 }
 
 @media screen and (min-width: 1200px) {
@@ -168,7 +164,14 @@ body.lock {
 
 	width: 100%;
 
-	border-bottom: 2px solid rgba(231, 232, 233, 0.443);
+	border-bottom: 2px solid rgba(231, 232, 233, 0.643);
+}
+
+.header--fixed {
+	position: fixed;
+	z-index: 9999;
+	left: 0;
+	top: 0;
 }
 
 .header-menu {
@@ -197,7 +200,6 @@ body.lock {
 /* -----burger menu----- */
 
 @media screen and (max-width: 767px) {
-	
 	.menu-icon {
 		display: block;
 
