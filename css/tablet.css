@@ -28,6 +28,10 @@
 		color: var(--header-link-color-js);
 	}
 
+	.burger-btn--active {
+		background-color: azure;
+	}
+
 	.menu-link.course {
 		color: var(--link-hover-text);
 	}
@@ -286,11 +290,12 @@
 		padding-right: 5px;
 	}
 
-	/* ------------footer----------- */
+	/* ------------modal----------- */
 
 	.offer-link {
-		font-size: 15px;
+		font-size: 10px;
 	}
+	/* ------------footer----------- */
 
 	.copyright {
 		font-size: 14px;
