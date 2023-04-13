@@ -441,27 +441,8 @@ body.lock {
 
 /* -----------Сompetence--------------- */
 
-@media screen and (max-width: 1199px) {
-	.certificates-title {
-		font-size: 32px;
-
-		margin-bottom: 62px;
-	}
-
-	.certificates-list {
-		display: flex;
-		justify-content: center;
-		flex-wrap: wrap;
-		gap: 30px;
-	}
-
-	.certificates-item {
-		width: 40%;
-	}
-}
-
 .certificates {
-	padding: 50px 0;
+	padding: 50px 0 50px;
 
 	background: linear-gradient(54deg, var(--logo-color-2) 40%, var(--logo-color) 67%);
 	background-repeat: no-repeat;
@@ -469,13 +450,79 @@ body.lock {
 	background-size: cover;
 }
 
-.certificates-item img {
+.certificates-title {
+	font-size: 32px;
+	margin-bottom: 62px;
+}
+
+.container-slider {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	gap: 20px;
+}
+
+.slider-content {
+	position: relative;
+	overflow: hidden;
+	display: flex;
+	width: 100%;
+}
+
+.product-image {
+	height: 201px;
+	width: 330px;
 	border: 2px solid var(--header-link-color);
 	border-radius: 8px;
-	box-shadow: 2px 2px 95px -5px rgba(230, 104, 60, 0.58);
+	box-shadow: 2px 2px 95px -5px rgba(230, 104, 60, 0.38);
 
-	height: 100%;
 	opacity: 0.8;
+}
+
+.card-content {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	height: 100%;
+	background: var(--pr-title-color);
+	border: 1px solid var(--bg-circle-color);
+
+	margin-bottom: 12px;
+}
+
+/* <!---- OVERWRITE SWIPER.JS STYLES  -----> */
+.swiper-pagination-bullet {
+	background: var(--header-link-color-js);
+	width: 13px;
+	height: 13px;
+	opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+	background: var(--logo-color);
+	width: 28px;
+	border-radius: 13px;
+}
+
+.swiper-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
+	bottom: initial;
+	display: flex;
+	gap: 13px;
+	justify-content: center;
+}
+
+.swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
+.swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+	margin: initial;
+}
+
+.swiper-pagination {
+	position: initial;
 }
 
 /* --------------Services------------- */

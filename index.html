@@ -2,29 +2,33 @@
 <html lang="uk">
 	<head>
 		<meta charset="UTF-8" />
+		<!-- Favicon -->
+		<!-- <link rel="icon" type="image/svg+xml" href="./public/favicon.svg" /> -->
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Helena Flyunt</title>
-		<!-- ---Шрифти Google--- -->
+		<!-- Шрифти Google -->
 		<link
 			href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Raleway:wght@700&display=swap"
 			rel="stylesheet"
 		/>
-		<!-- ---Нормалайз--- -->
+		<!-- Нормалайз -->
 		<link
 			rel="stylesheet"
 			href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
 		/>
-		<!-- ---Анімація на скрол сторінки--- -->
+		<!-- Анімація на скрол сторінки -->
 		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-		<!-- ---СSS--- -->
+		<!-- SWIPER.JS STYLES -->
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+		<!-- СSS -->
 		<link rel="stylesheet" href="./css/style.css" />
 		<link rel="stylesheet" href="./css/small-tablet.css" />
 		<link rel="stylesheet" href="./css/tablet.css" />
 		<link rel="stylesheet" href="./css/desktop.css" />
 	</head>
 	<body>
-		<!-- /* --------------HEADER-------------- */ -->
+		<!-- HEADER -->
 		<header class="header">
 			<div class="header-menu container">
 				<a href="./index.html" class="logo link"><span class="ps">Helena</span><span class="name">Flyunt</span></a>
@@ -75,10 +79,10 @@
 			</div>
 		</header>
 		<main>
-			<!-- /* --------------HERO-------------- */ -->
+			<!-- HERO -->
 			<section class="hero section" id="hero">
 				<div class="container">
-					<div class="hero-img" data-aos="zoom-in-up" data-aos-easing="linear" data-aos-duration="700">
+					<div class="hero-img">
 						<img
 							src="https://altera.center/pub/specialists/f9f445c191e343b1.jpg"
 							alt="Helena"
@@ -87,15 +91,8 @@
 						/>
 					</div>
 					<div class="hero-content">
-						<h1 class="hero-title title" data-aos="flip-up" data-aos-easing="linear" data-aos-duration="800"
-							>Мати емоційні проблеми - це природно</h1
-						>
-						<p
-							class="hero-description description"
-							data-aos="flip-right"
-							data-aos-easing="linear"
-							data-aos-duration="1400"
-						>
+						<h1 class="hero-title title">Мати емоційні проблеми - це природно</h1>
+						<p class="hero-description description">
 							Я походжу з сім’ї, де 3 покоління терапевтів і психологів, і ніколи не сумнівався, що допомагати людям
 							знаходити душевний спокій — це також і моє покликання. Протягом багатьох років я надаю індивідуальні та
 							сімейні консультації, зосереджуючись на тому, щоб допомогти вам усім досягти свого роду розумового дзен,
@@ -103,19 +100,11 @@
 							видів технік, я відчуваю себе повністю готовим допомогти вам повернути ваше психологічне здоров’я та
 							благополуччя на правильний шлях. Мій підхід витягне будь-кого з найглибшої депресивної ями!
 						</p>
-						<a
-							href="#contact"
-							type="button"
-							class="hero-btn btn link"
-							data-aos="fade-up"
-							data-aos-anchor-placement="top-bottom"
-							data-aos-duration="700"
-							>Зв'яжіться зі мною</a
-						>
+						<a href="#contact" type="button" class="hero-btn btn link">Зв'яжіться зі мною</a>
 					</div>
 				</div>
 			</section>
-			<!--------------work---------------->
+			<!-- Work -->
 			<section class="work section" id="work">
 				<div class="container">
 					<h2 class="work-title title" data-aos="flip-up" data-aos-easing="linear" data-aos-duration="400"
@@ -200,29 +189,44 @@
 					</ul>
 				</div>
 			</section>
-			<!-- -----------Сompetence--------------- -->
+			<!-- Сompetence -->
 			<section class="certificates section">
 				<div class="container">
-					<h2 class="certificates-title title" data-aos="flip-up" data-aos-easing="linear" data-aos-duration="400"
-						>Сертифікати</h2
-					>
-					<ul class="certificates-list list">
-						<li class="certificates-item" data-aos="zoom-in-up" data-aos-easing="linear" data-aos-duration="700">
-							<img src="./images/sertuficat1.jpeg" alt="сертефікат" width="270" height="180" />
-						</li>
-						<li class="certificates-item" data-aos="zoom-in-up" data-aos-easing="linear" data-aos-duration="700">
-							<img src="./images/sertuficat2.jpeg" alt="сертефікат" width="270" height="180" />
-						</li>
-						<li class="certificates-item" data-aos="zoom-in-up" data-aos-easing="linear" data-aos-duration="700">
-							<img src="./images/sertuficat3.jpeg" alt="сертефікат" width="270" height="180" />
-						</li>
-						<li class="certificates-item" data-aos="zoom-in-up" data-aos-easing="linear" data-aos-duration="700">
-							<img src="./images/sertufikat.jpeg" alt="сертефікат" width="270" height="180" />
-						</li>
-					</ul>
+					<h2 class="certificates-title title">Кваліфікація</h2>
+					<div class="container-slider">
+						<div class="slider-content mySwiper">
+							<ul class="swiper-wrapper">
+								<li class="card-content swiper-slide">
+									<img src="./images/sertuficat1.jpeg" alt="сертифікат" class="product-image" />
+								</li>
+								<li class="card-content swiper-slide">
+									<img src="./images/sertuficat2.jpeg" alt="сертифікат" class="product-image" />
+								</li>
+								<li class="card-content swiper-slide">
+									<img src="./images/sertuficat3.jpeg" alt="сертифікат" class="product-image" />
+								</li>
+								<li class="card-content swiper-slide">
+									<img src="./images/sertuficat2.jpeg" alt="сертифікат" class="product-image" />
+								</li>
+								<li class="card-content swiper-slide">
+									<img src="./images/sertuficat1.jpeg" alt="сертифікат" class="product-image" />
+								</li>
+								<li class="card-content swiper-slide">
+									<img src="./images/sertuficat2.jpeg" alt="сертифікат" class="product-image" />
+								</li>
+								<li class="card-content swiper-slide">
+									<img src="./images/sertuficat2.jpeg" alt="сертифікат" class="product-image" />
+								</li>
+								<li class="card-content swiper-slide">
+									<img src="./images/sertuficat3.jpeg" alt="сертифікат" class="product-image" />
+								</li>
+							</ul>
+						</div>
+						<div class="swiper-pagination-2"></div>
+					</div>
 				</div>
 			</section>
-			<!--------------Services------------->
+			<!-- Services -->
 			<section class="services section" id="services">
 				<div class="container">
 					<h2 class="services-title title" data-aos="flip-up" data-aos-easing="linear" data-aos-duration="400"
@@ -287,7 +291,7 @@
 					</ul>
 				</div>
 			</section>
-			<!--------------Registration------------->
+			<!-- Registration -->
 			<section class="registration section" id="registration">
 				<div class="container">
 					<h2 class="registration-title title" data-aos="flip-up" data-aos-easing="linear" data-aos-duration="400"
@@ -347,7 +351,7 @@
 					</div>
 				</div>
 			</section>
-			<!----------excerption---------->
+			<!-- Excerption -->
 			<section class="excerption">
 				<div class="container">
 					<p
@@ -363,7 +367,7 @@
 					>
 				</div>
 			</section>
-			<!--------------FAQ------------->
+			<!-- FAQ -->
 			<section class="faq-section section" id="faq">
 				<div class="wraper container" data-aos="fade-up" data-aos-anchor-placement="top-center">
 					<h2 class="faq-title title">FAQ</h2>
@@ -417,7 +421,7 @@
 					</div>
 				</div>
 			</section>
-			<!----------contact---------->
+			<!-- Contact -->
 			<section class="contact" id="contact">
 				<div class="container">
 					<address class="address-container">
@@ -478,7 +482,7 @@
 				</div>
 			</section>
 		</main>
-		<!------------footer----------->
+		<!-- Footer -->
 		<footer>
 			<div class="container logo-pay">
 				<img src="./images/payment.png" alt="платіжна система" width="240" />
@@ -492,19 +496,30 @@
 				<p lang="en" class="copyright">&copy;Copyright 2023</p>
 			</div>
 		</footer>
-		<!------------Скрол догори сайту----------->
+		<!-- Скрол догори сайту -->
 		<button class="btn-up btn-up_hide">
 			<svg class="btn-up-icon" width="53" height="53">
 				<use href="./images/symbol-defs.svg#icon-circle-up"></use>
 			</svg>
 		</button>
 
+		<!-- Modal -->
 		<script src="./js/modal-form.js"></script>
+		<!-- Mobile-menu -->
 		<script src="./js/mobile-menu.js"></script>
+		<!-- Scroll-header -->
 		<script src="./js/btn-scroll-header.js"></script>
+		<!-- FAQ -->
 		<script src="./js/faq.js"></script>
+		<!-- SLIDER -->
+		<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+		<!-- SWIPER.JS -->
+		<script src="./js/slider.js"></script>
+		<!-- Fixed-scrol -->
 		<script src="./js/heder-fixed-scrol.js"></script>
+		<!-- Link-color -->
 		<script src="./js/link-color-header.js"></script>
+		<!-- Анімація на скрол сторінки -->
 		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 		<script>
 			AOS.init();

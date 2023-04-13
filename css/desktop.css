@@ -63,8 +63,8 @@
 		padding: 100px 0;
 	}
 
-	.certificates-item {
-		width: calc((100%-72px) / 4);
+	.container-slider {
+		gap: 32px;
 	}
 
 	/* --------------Services------------- */

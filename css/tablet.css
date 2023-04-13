@@ -117,9 +117,8 @@
 		margin-bottom: 72px;
 	}
 
-	.certificates-list {
-		display: flex;
-		gap: 30px;
+	.container-slider {
+		gap: 32px;
 	}
 
 	/* --------------Services------------- */
