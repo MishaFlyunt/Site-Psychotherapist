@@ -471,8 +471,8 @@ body.lock {
 }
 
 .product-image {
-	height: 201px;
-	width: 330px;
+	height: 200px;
+	width: 300px;
 	border: 2px solid var(--header-link-color);
 	border-radius: 8px;
 
