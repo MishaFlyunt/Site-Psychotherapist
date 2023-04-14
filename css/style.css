@@ -412,7 +412,8 @@ body.lock {
 	justify-content: start;
 
 	box-shadow: -1px 0px 25px 5px rgba(80, 136, 187, 0.29);
-	border-radius: 7px;
+	border-radius: 25px;
+	border: 0.5px solid var(--logo-color);
 
 	width: 100%;
 	height: 100%;
@@ -474,7 +475,7 @@ body.lock {
 	height: 200px;
 	width: 300px;
 	border: 2px solid var(--header-link-color);
-	border-radius: 8px;
+	border-radius: 12px;
 
 	opacity: 0.8;
 }
@@ -643,7 +644,7 @@ body.lock {
 	width: 100%;
 	height: 100%;
 	padding: 20px;
-	border-radius: 12px;
+	border-radius: 14px;
 
 	background-color: rgb(235, 235, 235);
 
@@ -943,12 +944,12 @@ body.lock {
 }
 
 .club-title {
-	font-size: 32px;
+	font-size: 30px;
 	margin-bottom: 52px;
 }
 
 .club-description {
-	width: 90%;
+	width: 95%;
 	text-align: center;
 }
 
@@ -1037,13 +1038,19 @@ body.lock {
 .backdrop.is-hidden {
 	opacity: 0;
 	pointer-events: none;
+	overflow: hidden;
+}
+
+body.backdrop.is-hidden{
+	/* height: 100vh;
+	overflow-y: hidden; */
 }
 
 .modal {
 	padding: 24px;
 
 	height: 584px;
-	border-radius: 4px;
+	border-radius: 30px;
 	border: 1px solid var(--logo-color);
 	background-color: var(--primary-bg-color);
 	box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -1130,7 +1137,7 @@ body.lock {
 	padding: 8px 38px;
 
 	border: 1px solid rgba(33, 33, 33, 0.2);
-	border-radius: 4px;
+	border-radius: 14px;
 
 	outline: none;
 
@@ -1168,7 +1175,7 @@ body.lock {
 	color: var(--text-color);
 
 	border: 1px solid rgba(33, 33, 33, 0.2);
-	border-radius: 4px;
+	border-radius: 14px;
 
 	outline: none;
 	resize: none;
@@ -1194,7 +1201,7 @@ body.lock {
 	margin-bottom: 8px;
 
 	padding: 10px 15px;
-	border-radius: 8px;
+	border-radius: 20px;
 	border: 1px solid var(--logo-color-2);
 	background-color: var(--logo-color);
 	color: var(--primary-bg-color);
