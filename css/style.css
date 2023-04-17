@@ -579,6 +579,12 @@ body.lock {
 	background-color: var(--logo-color-2);
 }
 
+.services-btn{
+	padding: 8px 18px;
+	margin-top: 12px;
+	background-color: rgb(112, 156, 144);
+}
+
 .services-content p {
 	color: rgb(255, 255, 255);
 
@@ -963,7 +969,7 @@ body.lock {
 .club-item {
 	max-width: 320px;
 	padding: 20px;
-	border-radius: 7px;
+	border-radius: 14px;
 	border: 1px solid var(--logo-color);
 
 	box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
@@ -1050,7 +1056,7 @@ body.backdrop.is-hidden{
 	padding: 24px;
 
 	height: 584px;
-	border-radius: 30px;
+	border-radius: 25px;
 	border: 1px solid var(--logo-color);
 	background-color: var(--primary-bg-color);
 	box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -1088,7 +1094,6 @@ body.backdrop.is-hidden{
 }
 
 .btn-icon:is(:hover, :focus) {
-	border: none;
 	background-color: var(--link-hover-text);
 	color: var(--btn-text-color);
 }
@@ -1198,7 +1203,7 @@ body.backdrop.is-hidden{
 
 	width: 50%;
 	text-align: center;
-	margin-bottom: 8px;
+	margin-bottom: 10px;
 
 	padding: 10px 15px;
 	border-radius: 20px;
