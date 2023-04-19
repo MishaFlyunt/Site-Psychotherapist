@@ -77,6 +77,10 @@
 		justify-content: space-between;
 	}
 
+	.services-list:last-child{
+		justify-content: center;
+	}
+
 	/* --------------Registration------------- */
 
 	.registration {

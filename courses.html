@@ -104,7 +104,7 @@
 								<p class="clube-price">800 грн.</p>
 							</div>
 							<div class="club-btn" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="700">
-								<button class="btn" id="show" onClick="showDialog()" data-modal-open>Вступити в клуб</button>
+								<button class="btn scroll-off" type="button" data-modal-open>Вступити в клуб</button>
 							</div>
 						</li>
 						<li class="club-item">
@@ -120,7 +120,7 @@
 								<p class="clube-price">800 грн.</p>
 							</div>
 							<div class="club-btn" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="700">
-								<button class="btn" data-modal-open-1>Вступити в клуб</button>
+								<button class="btn scroll-off-1" type="button" data-modal-open-1>Вступити в клуб</button>
 							</div>
 						</li>
 						<li class="club-item">
@@ -136,7 +136,7 @@
 								<p class="clube-price">800 грн.</p>
 							</div>
 							<div class="club-btn" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="700">
-								<button class="btn" data-modal-open-2>Вступити в клуб</button>
+								<button class="btn scroll-off-2" type="button" data-modal-open-2>Вступити в клуб</button>
 							</div>
 						</li>
 					</ul>
@@ -218,10 +218,10 @@
 			</div>
 		</footer>
 		<!-- Modal -->
-		<div class="backdrop is-hidden" id="dialog" onClick="closeDialog()" data-modal data-modal-close>
+		<div class="backdrop is-hidden" data-modal>
 			<div class="modal">
 				<div class="modal-btn">
-					<button class="btn-icon" id="dialog" onClick="closeDialog()" data-modal-close>
+					<button class="btn-icon scroll-on" type="button" data-modal-close>
 						<svg class="modal-icon" width="8" height="8">
 							<use href="./images/symbol-defs.svg#icon-close"></use>
 						</svg>
@@ -257,7 +257,6 @@
 					<div class="modal-group-btn">
 						<a
 							href="https://secure.wayforpay.com/button/b1a8d2d19861b"
-							type="submit"
 							target="_blank"
 							rel="noopener noreferrer nofollow"
 							class="modal-link link"
@@ -278,10 +277,10 @@
 				</form>
 			</div>
 		</div>
-		<div class="backdrop is-hidden" data-modal-1 data-modal-close-1>
+		<div class="backdrop is-hidden" data-modal-1>
 			<div class="modal">
 				<div class="modal-btn">
-					<button class="btn-icon" data-modal-close-1>
+					<button class="btn-icon scroll-on-1" data-modal-close-1>
 						<svg class="modal-icon" width="8" height="8">
 							<use href="./images/symbol-defs.svg#icon-close"></use>
 						</svg>
@@ -321,7 +320,7 @@
 							target="_blank"
 							rel="noopener noreferrer nofollow"
 							class="modal-link link"
-							data-modal-close-link
+							data-modal-close-link-1
 							>Оплатити</a
 						>
 						<p class="modal-offer"
@@ -338,10 +337,10 @@
 				</form>
 			</div>
 		</div>
-		<div class="backdrop is-hidden" data-modal-2 data-modal-close-2>
+		<div class="backdrop is-hidden" data-modal-2>
 			<div class="modal">
 				<div class="modal-btn">
-					<button class="btn-icon" data-modal-close-2>
+					<button class="btn-icon scroll-on-2" data-modal-close-2>
 						<svg class="modal-icon" width="8" height="8">
 							<use href="./images/symbol-defs.svg#icon-close"></use>
 						</svg>
@@ -377,11 +376,11 @@
 					<div class="modal-group-btn">
 						<a
 							href="https://secure.wayforpay.com/button/b1a8d2d19861b"
-							type="submit"
+							type="button"
 							target="_blank"
 							rel="noopener noreferrer nofollow"
 							class="modal-link link"
-							data-modal-close-link
+							data-modal-close-link-2
 							>Оплатити</a
 						>
 						<p class="modal-offer"
@@ -405,19 +404,21 @@
 			</svg>
 		</button>
 		<!-- Modal -->
-		<script src="./js/modal-form-1.js"></script>
-		<script src="./js/modal-form-2.js"></script>
-		<script src="./js/modal-form-3.js"></script>
-
-		<script src="./js/not-scrol-modal.js"></script>
+		<script src="./js/modal-form-1.js" type="module"></script>
+		<script src="./js/modal-form-2.js" type="module"></script>
+		<script src="./js/modal-form-3.js" type="module"></script>
+		<!-- Not scrol -->
+		<script src="./js/not-scrol-modal-1.js" type="module"></script>
+		<script src="./js/not-scrol-modal-2.js" type="module"></script>
+		<script src="./js/not-scrol-modal-3.js" type="module"></script>
 		<!-- Mobile-menu -->
-		<script src="./js/mobile-menu-2.js"></script>
+		<script src="./js/mobile-menu-club.js" type="module"></script>
 		<!-- Scroll-header -->
-		<script src="./js/btn-scroll-header.js"></script>
+		<script src="./js/btn-scroll-header.js" type="module"></script>
 		<!-- Fixed-scrol -->
-		<script src="./js/heder-fixed-scrol.js"></script>
+		<script src="./js/heder-fixed-scrol.js" type="module"></script>
 		<!-- Link-color -->
-		<script src="./js/link-color-header.js"></script>
+		<script src="./js/link-color-header.js" type="module"></script>
 		<!-- Анімація на скрол сторінки -->
 		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 		<script>

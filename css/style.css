@@ -67,6 +67,12 @@ body.lock {
 	overflow: hidden;
 }
 
+.disable-scroll {
+  overflow: hidden;
+  height: 100vh;
+  width: 100%;
+}
+
 .title {
 	text-align: center;
 	font-family: var(--secondaty-font);
@@ -579,7 +585,7 @@ body.lock {
 	background-color: var(--logo-color-2);
 }
 
-.services-btn{
+.services-btn {
 	padding: 8px 18px;
 	margin-top: 12px;
 	background-color: rgb(112, 156, 144);
@@ -1045,11 +1051,6 @@ body.lock {
 	opacity: 0;
 	pointer-events: none;
 	overflow: hidden;
-}
-
-body.backdrop.is-hidden{
-	/* height: 100vh;
-	overflow-y: hidden; */
 }
 
 .modal {
