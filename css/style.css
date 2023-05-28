@@ -419,7 +419,7 @@ body.lock {
 
 	box-shadow: -1px 0px 25px 5px rgba(80, 136, 187, 0.29);
 	border-radius: 25px;
-	border: 0.5px solid var(--logo-color);
+	border: 0.7px solid var(--logo-color);
 
 	width: 100%;
 	height: 100%;
@@ -433,6 +433,7 @@ body.lock {
 .work-block:hover {
 	background-color: var(--logo-color-2);
 	color: rgb(255, 255, 255);
+	border: 1px solid var(--btn-border-color);
 	cursor: pointer;
 }
 
