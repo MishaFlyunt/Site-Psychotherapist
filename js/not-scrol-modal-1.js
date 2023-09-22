@@ -1,6 +1,7 @@
 const btnOff = document.querySelector(".scroll-off");
 const btnOn = document.querySelector(".scroll-on");
 const btnOnData = document.querySelector("[data-modal-close-link]");
+const backdropClik = document.querySelector("[data-modal]");
 const body = document.body;
 
 function disableScroll() {
@@ -27,6 +28,12 @@ btnOn.addEventListener("click", e => {
 });
 
 btnOnData.addEventListener("click", e => {
+	enableScroll();
+	e.currentTarget.style.pointerEvents = "none";
+	btnOff.style.pointerEvents = "auto";
+});
+
+backdropClik.addEventListener("click", e => {
 	enableScroll();
 	e.currentTarget.style.pointerEvents = "none";
 	btnOff.style.pointerEvents = "auto";
