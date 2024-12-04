@@ -518,6 +518,14 @@
 				<use href="./images/symbol-defs.svg#icon-circle-up"></use>
 			</svg>
 		</button>
+		<script>
+			document.querySelectorAll('a[target="_blank"]').forEach(link => {
+				const isExternal = link.href.startsWith("http") && !link.href.includes(location.hostname);
+				if (isExternal) {
+					link.setAttribute("rel", "noopener noreferrer");
+				}
+			});
+		</script>
 		<!-- Mobile-menu -->
 		<script src="./js/mobile-menu.js" type="module"></script>
 		<!-- Scroll-header -->
