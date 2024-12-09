@@ -1,34 +1,44 @@
-const btnOff = document.querySelector(".scroll-off-2");
-const btnOn = document.querySelector(".scroll-on-2");
-const btnOnData = document.querySelector("[data-modal-close-link-2]");
-const body = document.body;
+const btnOff = document.querySelector(".scroll-off-3"); // Кнопка для вимкнення прокрутки
+const btnOn = document.querySelector(".scroll-on-3"); // Кнопка для ввімкнення прокрутки
+const btnOnData = document.querySelector("[data-modal-close-link-2]"); // Альтернативна кнопка для ввімкнення прокрутки
+const body = document.body; // Body сторінки
 
+// Функція вимкнення прокрутки
 function disableScroll() {
-	let pagePosition = window.scrollY;
-	body.classList.add("disable-scroll");
-	body.dataset.position = pagePosition;
+	const pagePosition = window.scrollY; // Запам'ятовуємо поточну позицію сторінки
+	body.classList.add("disable-scroll"); // Додаємо клас блокування прокрутки
+	body.dataset.position = pagePosition; // Зберігаємо позицію у data-атрибуті
+	body.style.top = `-${pagePosition}px`; // Фіксуємо body на місці
 }
 
+// Функція ввімкнення прокрутки
 function enableScroll() {
-	body.classList.remove("disable-scroll");
+	const pagePosition = parseInt(body.dataset.position, 10) || 0; // Отримуємо позицію з data-атрибута
+	body.classList.remove("disable-scroll"); // Видаляємо клас блокування
+	body.style.top = ""; // Скидаємо top
+	window.scrollTo(0, pagePosition); // Повертаємося до попередньої позиції
 }
 
-btnOff.addEventListener("click", e => {
+// Функція для керування станом кнопок
+function toggleButtonState(activeBtn, ...otherBtns) {
+	activeBtn.style.pointerEvents = "none"; // Деактивуємо активну кнопку
+	otherBtns.forEach(btn => (btn.style.pointerEvents = "auto")); // Активуємо всі інші кнопки
+}
+
+// Слухач для кнопки вимкнення прокрутки
+btnOff.addEventListener("click", () => {
 	disableScroll();
-	e.currentTarget.style.pointerEvents = "none";
-	btnOn.style.pointerEvents = "auto";
-	btnOnData.style.pointerEvents = "auto";
+	toggleButtonState(btnOff, btnOn, btnOnData); // Оновлюємо стан кнопок
 });
 
-btnOn.addEventListener("click", e => {
+// Слухач для кнопки ввімкнення прокрутки (btnOn)
+btnOn.addEventListener("click", () => {
 	enableScroll();
-	e.currentTarget.style.pointerEvents = "none";
-	btnOff.style.pointerEvents = "auto";
+	toggleButtonState(btnOn, btnOff, btnOnData); // Оновлюємо стан кнопок
 });
 
-btnOnData.addEventListener("click", e => {
+// Слухач для кнопки ввімкнення прокрутки (btnOnData)
+btnOnData.addEventListener("click", () => {
 	enableScroll();
-	e.currentTarget.style.pointerEvents = "none";
-	btnOff.style.pointerEvents = "auto";
+	toggleButtonState(btnOnData, btnOff, btnOn); // Оновлюємо стан кнопок
 });
-

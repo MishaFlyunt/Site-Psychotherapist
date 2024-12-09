@@ -68,9 +68,10 @@ body.lock {
 }
 
 .disable-scroll {
-  overflow: hidden;
-  height: 100vh;
-  width: 100%;
+	position: fixed;
+	overflow: hidden;
+	height: 100vh;
+	width: 100%;
 }
 
 .title {
@@ -1040,7 +1041,7 @@ body.lock {
 	position: fixed;
 	top: 0;
 	left: 0;
-	z-index: 9999;
+	z-index: 999;
 	width: 100%;
 	height: 100%;
 	background-color: rgba(46, 47, 66, 0.4);
@@ -1056,7 +1057,7 @@ body.lock {
 
 .modal {
 	padding: 24px;
-
+	z-index: 1000;
 	height: 584px;
 	border-radius: 25px;
 	border: 1px solid var(--logo-color);
